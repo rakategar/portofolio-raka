@@ -32,10 +32,10 @@ export default function AboutMe(props) {
               Haloo aku Raka, Mahasiswa semester 4 Program Studi <span className="text-AAsecondary">S1 Pendidikan Teknologi
                Informasi Universitas Negeri Surabaya</span>, 
               memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam Organisasi ekstra maupun intra kampus, 
-              Tekun, Ulet, 
+              Tekun, Ulet, dan
               <span className="text-AAsecondary">dengan memiliki IPK 3.89 pada semester 4
-              </span>, Sangat Teliti dan Serius dalam mengerjakan sesuatu, baik pekerjaan kecil maupun besar,
-              mengutamakan kejujuran dan suka berinovasi, maka dari itu saya selalu tertantang mencoba hal baru.
+              </span>menjadikanku Sangat Teliti dan Serius dalam mengerjakan segala sesuatu, baik pekerjaan kecil maupun besar,
+              mengutamakan kejujuran dan suka berinovasi, maka dari itu aku selalu tertantang mencoba hal baru.
               </span>
             </div>
             <div className="font-Header ">
