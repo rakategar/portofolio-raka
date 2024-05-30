@@ -108,7 +108,7 @@ export default function Home() {
   console.log("website is rendering...");
   const meta = {
     title: "Raka Tegar - Web Dev",
-    description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
+    description: `Haii aku Raka UI/UX and Front End Web Dev, Yuk Kenalan !`,
     image: "/muka.png",
     type: "website",
   };
