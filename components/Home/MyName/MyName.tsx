@@ -64,9 +64,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="mt-12"
       >
-        <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+        <a href={"/cvraka.pdf"} target={"_blank"} rel="noreferrer">
           <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
-            Cek Resume Ku !
+            Cek CV Ku !
           </button>
         </a>
       </motion.div>

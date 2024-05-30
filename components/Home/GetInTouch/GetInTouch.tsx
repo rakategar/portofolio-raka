@@ -12,14 +12,14 @@ export default function GetInTouch() {
         <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary" />
         <div className="flex flex-row space-x-2 items-center">
           <span className="text-AAsecondary font-sans text-sm  sm:text-base"> 04.</span>
-          <span className=" font-sans text-AAsecondary text-base">What&apos;s Next?</span>
+          <span className=" font-sans text-AAsecondary text-base">Kontak</span>
         </div>
       </div>
       {/* // ? Get In Touch */}
-      <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">Get In Touch</span>
+      <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">Hubungi Aku !</span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        Although I&apos;m Always open for any new opportunities, my inbox is open. Whether you have a question or just
-        want to say hi, I&apos;ll try my best to get back to you!
+      Aku selalu terbuka untuk setiap peluang baru, kotak masuk Ku terbuka. Apakah Kamu memiliki pertanyaan 
+      atau hanya ingin menyapa, Aku akan berusaha sebaik mungkin untuk menghubungimu kembali!
       </p>
       <div className="pt-4">
         <a href="mailto:tegarrakaw@gmail.com" target={"_blank"} rel="noreferrer">
@@ -27,7 +27,7 @@ export default function GetInTouch() {
             className="font-mono text-sm text-AAsecondary border-AAsecondary 
                             px-8 py-4 border-[1.5px] rounded "
           >
-            Say Hello
+            Hai Raka !
           </button>
         </a>
       </div>

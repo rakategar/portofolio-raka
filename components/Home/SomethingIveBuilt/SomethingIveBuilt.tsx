@@ -44,7 +44,7 @@ export default function SomethingIveBuilt() {
                 ></div>
               </Link> */}
 
-              <a href="https://www.ens.vision" target={"_blank"} rel="noreferrer">
+              <a href="https://t.ly/figmamoody" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -63,7 +63,7 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/ensvision.jpg"} alt={"Project Screen shot"} className={`w-full h-full `} />
+                <Img src={"/moody.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
               </div>
             </div>
 
@@ -72,35 +72,30 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start md:items-end space-y-3"
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">ENS Vision </span>
-                <a href="https://ens.vision" target="_blank" rel="noopener noreferrer">
+                <span className="text-AAsecondary text-base">Figma Project</span>
+                <a href="https://t.ly/figmamoody" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    ENS names Marketplace
+                    Moody
                   </span>
                 </a>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right ">
-                  At <span className="text-AAsecondary">ENS Vision</span>, I played a crucial role in developing web3
-                  components for their <span className="text-AAsecondary">web3 application</span> using Next.js and web3
-                  libraries. Our focus was on integrating new features and improving the user interface. One notable
-                  achievement was the release of NameWrapper with <span className="text-AAsecondary">ERC72</span>{" "}
-                  support, enabling users to create <span className="text-AAsecondary">subdomains</span>. This showcased
-                  our commitment to delivering innovative solutions.
+                  <span className="text-AAsecondary">Moody</span>, merupakan aplikasi mobile yang 
+                  terintegrasi oleh teknologi Augmented Reality, aplikasi ini bertujuan sebagai pendamping untuk 
+                  seseorang yang mengalami masalah Mood yang tidak teratur, selain aplikasi, output dari Project ini 
+                  juga berupa Permen yang akan dijual belikan secara konvensional
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-end"
               >
-                <span className="pr-4 z-10">ENS domains</span>
-                <span className="pr-4 z-10">ENS names</span>
-                <span className="pr-4 z-10">web3</span>
-                <span className="pr-4 z-10">NFT</span>
-                <span className="pr-4 z-10">ERC72</span>
+                <span className="pr-4 z-10">Figma</span>
+                
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
-                <a href="https://www.ens.vision/" target={"_blank"} rel="noreferrer">
+                <a href="https://t.ly/figmamoody" target={"_blank"} rel="noreferrer">
                   <ExternalLink url={""} router={router} />
                 </a>
               </div>
@@ -116,13 +111,13 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href={"https://ubiquitous-bublanina-da84ec.netlify.app/"} target="_blank" rel="noreferrer">
+              <a href={"https://t.ly/sehatin"} target="_blank" rel="noreferrer">
                 <div
                   className="absolute w-full h-full rounded bg-AAprimary 
            transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </a>
-              <Img src={"/img/YPredict-v1.jpg"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <Img src={"/Sehatin.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
             </div>
           </div>
 
@@ -133,7 +128,7 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/hackme.jpg"} alt={"Project Screen shot"} className={`w-full h-full`} />
+                <Img src={"/Sehatin.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
               </div>
             </div>
 
@@ -142,42 +137,39 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start  space-y-3 md:order-1"
             >
               <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://ypredict.ai/" target="_blank" rel="noopener noreferrer">
+                <span className="text-AAsecondary text-base">Figma Project</span>
+                <a href="https://t.ly/sehatin" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    YPredict - v1
+                    Sehatin
                   </span>
                 </a>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
-                  I had the opportunity to lead the development of a token project, which aimed to create a
-                  decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the
-                  project, including the <span className="text-AAsecondary"> design</span> and implementation of the{" "}
-                  <span className="text-AAsecondary"> smart contract</span> and{" "}
-                  <span className="text-AAsecondary"> blockchain technology</span>. Here i share with you{" "}
-                  <span className="text-AAsecondary"> YPredict - v1 </span> for the private sale.
+                <span className="text-AAsecondary">Sehatin</span>
+                , merupakan aplikasi mobile yang diperuntukan kepada umum yang bertujuan untuk mengatur pola makan 
+                serta hidup sehat para pengguna. Fitur dari Sehatin meliputi rekomendasi makanan sehat, podcast edukasi, 
+                kalkulator gizi, hingga konsultasi dengan para ahli
+                  
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-start"
               >
-                <span className="pr-4 z-10">Token</span>
-                <span className="pr-4 z-10">ERC20</span>
-                <span className="pr-4 z-10">Nextjs</span>
-                <span className="pr-4 z-10">Smart contract</span>
-                <span className="pr-4 z-10">Blockchain</span>
+                <span className="pr-4 z-10">Figma</span>
+                
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
-                <GithubIcon link="https://github.com/hktitof/Ypredict" />
-                <a href="https://ubiquitous-bublanina-da84ec.netlify.app/" target={"_blank"} rel="noreferrer">
+                
+                <a href="https://t.ly/sehatin" target={"_blank"} rel="noreferrer">
                   <ExternalLink url={""} router={router} />
                 </a>
               </div>
             </div>
           </div>
         </div>
+
         {/* // ?  Project  3*/}
         <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
           {/* Left image */}
@@ -186,7 +178,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <Link href={"/typing"}>
+              <Link href={"/https://t.ly/figmastuncare"}>
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAsecondary 
@@ -194,7 +186,7 @@ export default function SomethingIveBuilt() {
                 ></div>
               </Link>
 
-              <Img src={"/typing.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <Img src={"/Stuncare.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
             </div>
           </div>
 
@@ -205,7 +197,7 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/typing.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
+                <Img src={"/Stuncare.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
               </div>
             </div>
 
@@ -214,33 +206,31 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start md:items-end space-y-3"
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <Link href={"/typing"}>
+                <span className="text-AAsecondary text-base">Figma Project</span>
+                <Link href={"/https://t.ly/figmastuncare"}>
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Speed Typing
+                    Stuncare
                   </span>
                 </Link>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                  This project aim to help you to improve your <span className="text-AAsecondary"> typing </span> by
-                  tracking your progress in <span className="text-AAsecondary"> each round</span> and give you a{" "}
-                  <span className="text-AAsecondary"> score</span> based on your typing speed and accuracy through a
-                  table of <span className="text-AAsecondary"> statistics</span>.
+                <span className="text-AAsecondary text-base">Stuncare</span>
+                  , merupakan aplikasi mobile yang bergerak di bidang statistik dan edukasi mengenai stunting
+                  di daerah Pamekasan, selain itu aplikasi ini juga di peruntukan untuk penyandang disabilitas yang 
+                  mengutamakan kemudahan penggunaan aplikasi, serta fasilitas pengaduan ke dokter ahli
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-end"
               >
-                <span className="pr-4 z-10">Algorithms</span>
-                <span className="pr-4 z-10">Framer Motion</span>
-                <span className="pr-4 z-10">Tailwind CSS</span>
-                <span className="pr-4 z-10">TypeScript</span>
+                <span className="pr-4 z-10">Figma</span>
+                
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
-                <GithubIcon link="https://github.com/hktitof/Typing" />
-                <ExternalLink url={"typing"} router={router} />
+                
+                <ExternalLink url={"/https://t.ly/figmastuncare"} router={router} />
               </div>
             </div>
           </div>
@@ -254,13 +244,13 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <Link href={"/userdatapuller"}>
+              <Link href={"/https://t.ly/figmadapurin"}>
                 <div
                   className="absolute w-full h-full rounded bg-AAsecondary 
            transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </Link>
-              <Img src={"/hackme.jpg"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <Img src={"/Dapurin.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
             </div>
           </div>
 
@@ -271,7 +261,7 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/hackme.jpg"} alt={"Project Screen shot"} className={`w-full h-full`} />
+                <Img src={"/Dapurin.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
               </div>
             </div>
 
@@ -280,36 +270,32 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start  space-y-3 md:order-1"
             >
               <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <Link href={"/userdatapuller"}>
+                <span className="text-AAsecondary text-base">Figma Project</span>
+                <Link href={"/https://t.ly/figmadapurin"}>
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    User Data puller
+                    Dapurin
                   </span>
                 </Link>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
-                  This project allows you to understand how easy it is to identify and track your browser based on how
-                  it appears to websites. Such as your
-                  <span className="text-AAsecondary"> location</span>,{" "}
-                  <span className="text-AAsecondary">IP Address</span>,{" "}
-                  <span className="text-AAsecondary">{","} software, Hardware</span> and some additional information
-                  with the help of cookies.
+                  <span className="text-AAsecondary">Dapurin</span>
+                , merupakan aplikasi mobile E-Commerce yang bergerak di bidang pengadaan bahan baku masak, terutama
+                sayuran, buah, dan biji. Tampilan dari aplikasi Dapurin ini di desain semenarik mungkin agar meningkatkan
+                  Mood untuk mengolah bahan makan 
+                  
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-start"
               >
-                <span className="pr-4 z-10">Cookies</span>
-                <span className="pr-4 z-10">Google APi</span>
-                <span className="pr-4 z-10">Data collecting</span>
-                <span className="pr-4 z-10">IP Address</span>
-                <span className="pr-4 z-10">Location</span>
+                <span className="pr-4 z-10">FIgma</span>
+                
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
-                <GithubIcon link="https://github.com/hktitof/DataPuller" />
-                <ExternalLink url={"/userdatapuller"} router={router} />
+                
+                <ExternalLink url={"/https://t.ly/figmadapurin"} router={router} />
               </div>
             </div>
           </div>
@@ -323,7 +309,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <a href="https://www.haircut.ma" target={"_blank"} rel="noreferrer">
+              <a href="https://t.ly/gitjadwalin" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -332,10 +318,10 @@ export default function SomethingIveBuilt() {
               </a>
 
               <div className="absolute px-2 bg-AAprimary rounded  ml-4 mt-2 ">
-                <span className="text-AAsecondary text-xl">In initiation...</span>
+                
               </div>
 
-              <Img src={"/haircut.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <Img src={"/Jadwalin.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
             </div>
           </div>
 
@@ -346,47 +332,43 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/haircut.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
+                <Img src={"/Jadwalin.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
               </div>
             </div>
             <div className="absolute w-full   rounded  ml-4 mt-2  text-end pr-8">
               <div className="w-full"></div>
-              <span className="text-AAsecondary sm:text-lg bg-AAprimary px-2 py-1 rounded">In initiation...</span>
             </div>
             <div
               className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
             col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-1"
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://www.haircut.ma" target={"_blank"} rel="noreferrer">
+                <span className="text-AAsecondary text-base">Mobile Dev Project</span>
+                <a href="https://t.ly/gitjadwalin" target={"_blank"} rel="noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Haircut Appointment
+                    Jadwalin
                   </span>
                 </a>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                  It&apos; a barber shop <span className="text-AAsecondary">appointment scheduling</span> & management
-                  software it provides <span className="text-AAsecondary">online scheduling</span>, appointment
-                  reminders, <span className="text-AAsecondary">payments</span>, marketing, and much more! Currently in
-                  the <span className="text-AAsecondary">Initiation phase</span>.
+                <span className="text-AAsecondary text-base">Jadwalin</span>
+                , merupakan aplikasi mobile yang bertujuan untuk pengelolaan tugas, aplikasi ini hadir 
+                agar pengguna mudah dalam memanajemen tugas - tugas yang akan mereka kerjakan, dengan adanya Jadwalin 
+                diharap dapat membantu produktivitas pengguna
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-end"
               >
-                <span className="pr-4 z-10">Appointment</span>
-                <span className="pr-4 z-10">Management</span>
-                <span className="pr-4 z-10">Scheduling</span>
-                <span className="pr-4 z-10">Booking</span>
+                <span className="pr-4 z-10">Flutter</span>
+                <span className="pr-4 z-10">Firebase</span>
+                
               </ul>
               <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <GithubIcon link="https://github.com/hktitof/haircut" />
-                <a href="https://www.haircut.ma" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={""} router={router} />
-                </a>
+                <GithubIcon link="https://github.com/rakategar/jadwalin" />
+                
               </div>
             </div>
           </div>
@@ -400,14 +382,14 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href="https://github.com/hktitof/CallCenter" target={"_blank"} rel="noreferrer">
+              <a href="https://github.com/rakategar/opendiary" target={"_blank"} rel="noreferrer">
                 <div
                   className="absolute w-full h-full rounded bg-AAprimary 
            transition-opacity opacity-60 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </a>
 
-              <Img src={"/CallCenter.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <Img src={"/Opendiary.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
             </div>
           </div>
 
@@ -418,7 +400,7 @@ export default function SomethingIveBuilt() {
               <div className="relative w-full h-full">
                 <div className="absolute w-full h-full bg-AAprimary opacity-50 z-10"></div>
                 <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/CallCenter.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
+                <Img src={"/Opendiary.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
               </div>
             </div>
 
@@ -427,37 +409,266 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start  sm:space-y-3 md:order-1"
             >
               <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://github.com/hktitof/CallCenter" target={"_blank"} rel="noreferrer">
+                <span className="text-AAsecondary text-base">Web Dev Project</span>
+                <a href="https://github.com/rakategar/opendiary" target={"_blank"} rel="noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Call Center Management System
+                    Open Diary
                   </span>
                 </a>
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
-                  A <span className="text-AAsecondary">JavaFX call center management system</span> project it is used
-                  for receiving or transmitting a large volume of enquiries between the agent and the customer,it
-                  handles the communication between agents & clients it can be used for the both side client & agent
-                  side to handle the messages and issues.
+                  <span className="text-AAsecondary">Open Dairy</span>, merupakan
+                   aplikasi website yang terintegrasi oleh database Supabase dan autentikasi Clerk, aplikasi ini bertujuan 
+                   agar pengguna dapat mengunggah Diary atau Curhatan mereka dan dapat ditanggapi oleh pengguna lain
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-start"
               >
-                <span className="pr-4 z-10">JavaFX</span>
-                <span className="pr-4 z-10">Java Concurrency</span>
-                <span className="pr-4 z-10">MultiThreading</span>
-                <span className="pr-4 z-10">MySQL</span>
+                <span className="pr-4 z-10">NextJS</span>
+                <span className="pr-4 z-10">Tailwind</span>
+                <span className="pr-4 z-10">Supabase</span>
+                <span className="pr-4 z-10">Clerk</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <GithubIcon link="https://github.com/hktitof/CallCenter" />
+                <GithubIcon link="https://github.com/rakategar/opendiary" />
               </div>
             </div>
           </div>
+          
         </div>
-      </div>
+      
+
+        {/* // ? Project 7 */}
+        <div data-aos="fade-up" className="relative  md:grid md:grid-cols-12 w-full md:h-96">
+          {/* Left image */}
+          <div
+            className="hidden bg-AAprimary z-10  py-4 
+          absolute md:grid grid-cols-12 w-full h-full  content-center"
+          >
+            <div className="relative rounded w-full h-full col-span-7 ">
+              <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+                <div
+                  // onClick={}
+                  className="absolute w-full h-full rounded bg-AAprimary 
+           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
+                ></div>
+              </a>
+
+              <div className="absolute px-2 bg-AAprimary rounded  ml-4 mt-2 ">
+                
+              </div>
+
+              <Img src={"/Webwibu.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+            </div>
+          </div>
+
+          {/* right Content */}
+          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
+            {/* background for text in mobile responsive */}
+            <div className="absolute w-full h-full bg-opacity-70 z-0">
+              <div className="relative w-full h-full">
+                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
+                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
+                <Img src={"/Webwibu.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
+              </div>
+            </div>
+            <div className="absolute w-full   rounded  ml-4 mt-2  text-end pr-8">
+              <div className="w-full"></div>
+            </div>
+            <div
+              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
+            col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-1"
+            >
+              <div className="flex flex-col space-y-1 md:items-end z-10">
+                <span className="text-AAsecondary text-base">Web Dev Project</span>
+                <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+                  <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                    WebWibu
+                  </span>
+                </a>
+              </div>
+              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
+                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
+                <span className="text-AAsecondary text-base">WebWibu</span>
+                , merupakan aplikasi website yang terintegrasi oleh Database JikanApi dan Payment Gateway 
+                MidTrans, aplikasi ini bertujuan untuk menyajikan daftar anime baik secara rekomendasi, tingkat 
+                popularitas, serta ranking. Aplikasi ini disertai mini Youtube Player yang  memudahkan pengguna
+                </p>
+              </div>
+              <ul
+                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+               text-sm font-Text2 md:justify-end"
+              >
+                <span className="pr-4 z-10">NextJS</span>
+                <span className="pr-4 z-10">Tailwind</span>
+                <span className="pr-4 z-10">MySQL</span>
+                <span className="pr-4 z-10">MidTrans</span>
+                
+              </ul>
+              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
+                <GithubIcon link="https://github.com/rakategar/jadwalin" />
+                <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        {/* // ?  Project 8 */}
+        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96  ">
+          {/* Left image */}
+          <div
+            className="hidden bg-AAprimary z-10  py-4 
+          absolute md:grid grid-cols-12 w-full h-full  content-center "
+          >
+            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
+              <a href="https://kinaishku.com/makanan-2" target={"_blank"} rel="noreferrer">
+                <div
+                  className="absolute w-full h-full rounded bg-AAprimary 
+           transition-opacity opacity-60 hover:opacity-0 hover:cursor-pointer duration-300"
+                ></div>
+              </a>
+
+              <Img src={"/Webumkmmu.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+            </div>
+          </div>
+
+          {/* right Content */}
+          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
+            {/* background for text in mobile responsive */}
+            <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
+              <div className="relative w-full h-full">
+                <div className="absolute w-full h-full bg-AAprimary opacity-50 z-10"></div>
+                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
+                <Img src={"/Webumkmmu.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
+              </div>
+            </div>
+
+            <div
+              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
+            col-span-8 flex flex-col items-start  sm:space-y-3 md:order-1"
+            >
+              <div className="flex flex-col space-y-1  z-10">
+                <span className="text-AAsecondary text-base">Web Dev Project</span>
+                <a href="https://kinaishku.com/makanan-2" target={"_blank"} rel="noreferrer">
+                  <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                    Web UMKM Mu
+                  </span>
+                </a>
+              </div>
+              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
+                <p className="text-gray-300 md:text-gray-400 text-left ">
+                  <span className="text-AAsecondary">Web UMKM Mu</span>
+                  , merupakan project aplikasi website yang saya buat secara gratis untuk para pelaku UMKM, 
+                  dengan dibuatnya website untuk mereka diharap dapat memperluas jangkauan pasar dari usaha yang mereka miliki
+                </p>
+              </div>
+              <ul
+                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+               text-sm font-Text2 md:justify-start"
+              >
+                <span className="pr-4 z-10">Canva Website</span>
+                
+              </ul>
+              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
+                <a href="https://kinasihku.com" target={"_blank"} rel="noreferrer">
+                  <ExternalLink url={""} router={router} />
+                </a> 
+                <a href="https://kinasihku.com/makanan-1" target={"_blank"} rel="noreferrer">
+                  <ExternalLink url={""} router={router} />
+                </a> 
+                <a href="https://kinasihku.com/makanan-2" target={"_blank"} rel="noreferrer">
+                  <ExternalLink url={""} router={router} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        {/* // ? Project 9 */}
+        <div data-aos="fade-up" className="relative  md:grid md:grid-cols-12 w-full md:h-96">
+          {/* Left image */}
+          <div
+            className="hidden bg-AAprimary z-10  py-4 
+          absolute md:grid grid-cols-12 w-full h-full  content-center"
+          >
+            <div className="relative rounded w-full h-full col-span-7 ">
+              <a href="https://zahratrans.my.id" target={"_blank"} rel="noreferrer">
+                <div
+                  // onClick={}
+                  className="absolute w-full h-full rounded bg-AAprimary 
+           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
+                ></div>
+              </a>
+
+              <div className="absolute px-2 bg-AAprimary rounded  ml-4 mt-2 ">
+                
+              </div>
+
+              <Img src={"/Zahratrans.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+            </div>
+          </div>
+
+          {/* right Content */}
+          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
+            {/* background for text in mobile responsive */}
+            <div className="absolute w-full h-full bg-opacity-70 z-0">
+              <div className="relative w-full h-full">
+                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
+                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
+                <Img src={"/Zahratrans.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
+              </div>
+            </div>
+            <div className="absolute w-full   rounded  ml-4 mt-2  text-end pr-8">
+              <div className="w-full"></div>
+            </div>
+            <div
+              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
+            col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-1"
+            >
+              <div className="flex flex-col space-y-1 md:items-end z-10">
+                <span className="text-AAsecondary text-base">Web Dev Project</span>
+                <a href="https://zahratrans.my.id" target={"_blank"} rel="noreferrer">
+                  <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                    Zahra Trans
+                  </span>
+                </a>
+              </div>
+              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
+                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
+                <span className="text-AAsecondary text-base">Zahra Trans</span>
+                , merupakan aplikasi website yang bergerak di bidang bis travel dan wisata, aplikasi ini akan 
+                memudahkan pengguna dalam melakukan pemesanan bis travel serta memudahkan dalam pemilihan rekomendasi 
+                wisata yang mungkin belum mereka ketahui 
+                </p>
+              </div>
+              <ul
+                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+               text-sm font-Text2 md:justify-end"
+              >
+                <span className="pr-4 z-10">Wordpress</span>
+                
+                
+              </ul>
+              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
+              <a href="https://zahratrans.my.id" target={"_blank"} rel="noreferrer">
+                  <ExternalLink url={""} router={router} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
     </div>
   );
 }
