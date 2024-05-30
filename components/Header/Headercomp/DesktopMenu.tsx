@@ -108,7 +108,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         // onClick={()=>{router.push("/cvraka.pdf")}}
         className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded-sm border-AAsecondary hover:bg-ResumeButtonHover"
       >
-        Resume
+        CV Ku !
       </motion.button>
       </a>
       
