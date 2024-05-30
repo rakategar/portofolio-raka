@@ -5,16 +5,16 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function TrouveTavoie() {
   const tasks = [
     {
-      text: "Spearhead & implemented a new design user workflow system for the Frond-End Architecture of a NFT Marketplace.",
-      keywords: ["NFT Marketplace"],
+      text: "2024 - Sekarang | Himpunan Mahasiswa Teknik Informatika | Kepala Departemen PSDM\nMemimpin Departemen PSDM agar dapat meraih tujuan mahasiswa dalam hal pengembangan diri, baik di bidang akademik maupun non-akademik.",
+      keywords: ["Kepala Departemen PSDM"],
     },
     {
-      text: "Worked with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Next.js/React, AWS and Vercel.",
-      keywords: ["Next.js/React", "AWS", "Vercel"],
+      text: "2023 - 2024 | Himpunan Mahasiswa Teknik Informatika | Staff PSDM.\nMengelola Sumber Daya Mahasiswa dan memaksimalkan potensi sehingga dapat bersaing di era global",
+      keywords: ["Staff PSDM."],
     },
     {
-      text: "Interfaced with developers on a daily basis, providing technological expertise.",
-      keywords: [],
+      text: "2023 - Sekarang | Forum Mahasiswa Tuban Ronggolawe | Staff Kewirausahaan\nBertanggung jawab membantu staf terhadap segala upaya Pengadaan Keuangan melalui Kewirausahaan maupun lainnya",
+      keywords: ["Staff Kewirausahaan"],
     },
   ];
 
@@ -24,16 +24,9 @@ export default function TrouveTavoie() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-            Software Engineer <span className="text-AAsecondary">@ Blockchain</span>
+           Organisasi Ku 
           </span>
-          {/* Date */}
-          <span className="font-mono text-xs text-gray-500">Mars - August 2022</span>
-          <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}
-           // set on click to open the website
-           onClick={() => window.open("https://www.trouvetavoie.io/", "_blank")}
-          >
-            www.trouvetavoie.io
-          </span>
+          
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">
           {/* Tasks Description 1 */}

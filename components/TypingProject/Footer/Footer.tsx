@@ -22,7 +22,7 @@ export default function Fotter(props:{link:string,className:string}) {
         {/* // ? Reach me at */}
         <div className="flex flex-row space-x-8">
           <ClickableIcon
-            href={"https://github.com/hktitof"}
+            href={"https://github.com/rakategar"}
             Icon={GithubIcon}
           />
           <ClickableIcon
@@ -30,7 +30,7 @@ export default function Fotter(props:{link:string,className:string}) {
             Icon={LinkedinIcon}
           />
           <ClickableIcon
-            href={"https://www.instagram.com/titof_abdo/"}
+            href={"https://www.instagram.com/rakategarr_/"}
             Icon={InstagramIcon}
           />
           <ClickableIcon

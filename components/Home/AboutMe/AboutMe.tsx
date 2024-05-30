@@ -3,8 +3,8 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Ether.js", "Solidity"],
-    ["Node.js", "TypeScript", "Framer Motion", "react-moralis", "web3.js"],
+    ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "TypeScript"],
+    ["MySQL", "Prisma", "Firebase", "Supabase", "Flutter"],
   ];
   return (
     <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
@@ -18,7 +18,7 @@ export default function AboutMe(props) {
             <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"} />
             <span className="text-AAsecondary font-Header text-sm  sm:text-xl"> 01.</span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
-              About Me
+              Tentang Aku
             </span>
           </div>
           <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
@@ -29,21 +29,25 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Abdellatif, and I am a passionate software engineer and problem solver, dedicated to
-                creating impactful codes that thrive on the internet. My journey in computer science began in 2009 when
-                I delved into the world of Ethical Hacking using BackTrack OS. Little did I know that programming skills
-                would become essential in pursuing this interest, marking the start of my programming journey.
+              Haloo aku Raka, Mahasiswa semester 4 Program Studi <span className="text-AAsecondary">S1 Pendidikan Teknologi
+               Informasi Universitas Negeri Surabaya</span>, 
+              memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam Organisasi ekstra maupun intra kampus, 
+              Tekun, Ulet, 
+              <span className="text-AAsecondary">dengan memiliki IPK 3.89 pada semester 4
+              </span>, Sangat Teliti dan Serius dalam mengerjakan sesuatu, baik pekerjaan kecil maupun besar,
+              mengutamakan kejujuran dan suka berinovasi, maka dari itu saya selalu tertantang mencoba hal baru.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me through diverse industries, allowing me to
-                refine my expertise in desktop and web development. In the realm of{" "}
-                <span className="text-AAsecondary">web3</span>, I am dedicated to pushing boundaries and driving
-                advancements. With experience working alongside esteemed organizations like{" "}
-                <span className="text-AAsecondary">ENS Vision</span>, where I played a key role in releasing v2 of{" "}
-                <span className="text-AAsecondary">ENS Vision Marketplace</span> , my passion for web3 and continuous
-                learning drives me to make a positive impact and advance technology.
+                Aku sangat suka mencoba hal hal baru, walau basic ku adalah di bidang 
+                <span className="text-AAsecondary">UI/UX designer dan Front End Web Development,</span>tapi aku juga pernah belajar 
+                <span className="text-AAsecondary">mobile development dengan Flutter</span>
+                . selain itu aku juga aktif dalam berkegiatan sosial  dan organisasi, organisasi yang aku ikuti saat ini yaitu, 
+                <span className="text-AAsecondary">Himpunan Mahasiswa Teknik Informatika sebagai Kepala Departemen 
+                PSDM</span>
+               , dan 
+               <span className="text-AAsecondary">Forum Mahasiswa Tuban Ronggolawe sebagai Staff Kewirausahaan</span>
               </span>
             </div>
             {/* <div className="font-Header tracking-wide">
@@ -61,7 +65,7 @@ export default function AboutMe(props) {
 
             <div className="font-Header tracking-wide">
               <span className="text-gray-400  ">
-                Here are a few technologies I&apos;ve been working with recently :
+                Berikut skill yang aku punya
               </span>
             </div>
             <div className="font-Header tracking-wide flex flex-row space-x-16">
@@ -102,7 +106,7 @@ export default function AboutMe(props) {
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/img/Portfolio-portrait-3.jpg"}
+                src={"/img/pasfoto.png"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
@@ -113,7 +117,7 @@ export default function AboutMe(props) {
             <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
             <div className="absolute w-48 h-full rounded overflow-hidden">
               <Img
-                src={"/img/Portfolio-portrait-3.jpg"}
+                src={"/img/pasfoto.png"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />

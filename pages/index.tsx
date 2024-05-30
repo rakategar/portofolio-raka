@@ -66,7 +66,7 @@ export default function Home() {
     if (!IsBlackListEmpty) {
       if (userData) {
         // check if the user country is in the blackList
-        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES.includes(userData.country)) {
+        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES?.includes(userData.country)) {
           // set isBlackListed to true
           setIsBlackListed(true);
         }
@@ -107,9 +107,9 @@ export default function Home() {
 
   console.log("website is rendering...");
   const meta = {
-    title: "Abdellatif Anaflous - Software Engineer",
+    title: "Raka Tegar - Web Dev",
     description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
-    image: "/titofCercle.png",
+    image: "/muka.png",
     type: "website",
   };
   const isProd = process.env.NODE_ENV === "production";
@@ -146,7 +146,7 @@ export default function Home() {
           {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={"https://github.com/hktitof/my-website"} hideSocialsInDesktop={true} />
+            <Footer githubUrl={"https://github.com/rakategar"} hideSocialsInDesktop={true} />
           ) : (
             <></>
           )}

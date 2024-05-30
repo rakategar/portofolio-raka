@@ -35,7 +35,7 @@ const MobileMenu = props => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              About
+              Tentang
             </span>
           </Link>
           <Link
@@ -52,7 +52,7 @@ const MobileMenu = props => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Experience
+              Pengalaman
             </span>
           </Link>
           <Link
@@ -69,7 +69,7 @@ const MobileMenu = props => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Work
+              Projek
             </span>
           </Link>
           <Link
@@ -86,7 +86,7 @@ const MobileMenu = props => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Contact
+              Kontak
             </span>
           </Link>
           <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
