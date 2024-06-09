@@ -32,21 +32,21 @@ export default function AboutMe(props) {
               Haloo aku Raka, Mahasiswa semester 4 Program Studi <span className="text-AAsecondary">S1 Pendidikan Teknologi
                Informasi Universitas Negeri Surabaya</span>, 
               memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam Organisasi ekstra maupun intra kampus, 
-              Tekun, Ulet, dan
-              <span className="text-AAsecondary">dengan memiliki IPK 3.89 pada semester 4
+              Tekun, Ulet, dan &nbsp; 
+              <span className="text-AAsecondary">dengan memiliki IPK 3.89 pada semester 4 &nbsp;
               </span>menjadikanku Sangat Teliti dan Serius dalam mengerjakan segala sesuatu, baik pekerjaan kecil maupun besar,
               mengutamakan kejujuran dan suka berinovasi, maka dari itu aku selalu tertantang mencoba hal baru.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Aku sangat suka mencoba hal hal baru, walau basic ku adalah di bidang 
-                <span className="text-AAsecondary">UI/UX designer dan Front End Web Development,</span>tapi aku juga pernah belajar 
+                Aku sangat suka mencoba hal hal baru, walau basic ku adalah di bidang &nbsp; 
+                <span className="text-AAsecondary">UI/UX designer dan Front End Web Development,</span>&nbsp;tapi aku juga pernah belajar &nbsp; 
                 <span className="text-AAsecondary">mobile development dengan Flutter</span>
-                . selain itu aku juga aktif dalam berkegiatan sosial  dan organisasi, organisasi yang aku ikuti saat ini yaitu, 
+                . selain itu aku juga aktif dalam berkegiatan sosial  dan organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
                 <span className="text-AAsecondary">Himpunan Mahasiswa Teknik Informatika sebagai Kepala Departemen 
                 PSDM</span>
-               , dan 
+               , dan &nbsp;
                <span className="text-AAsecondary">Forum Mahasiswa Tuban Ronggolawe sebagai Staff Kewirausahaan</span>
               </span>
             </div>
