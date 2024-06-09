@@ -53,7 +53,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
         Cuma cowo biasa yang kebetulan suka <span className="text-AAsecondary">Web Development</span>, sama suka indomie goreng <br className="2xl:block hidden" />
-       
+        <div className="flex flex-row gap-2 items-center pt-2">
+        <p>Tekan tombol&nbsp;</p>
+       <Link href={"https://wa.link/njvrbh"} className="text-AAsecondary border px-2 py-1 rounded hover:bg-slate-500">S</Link>
+        <p>&nbsp;untuk menghubungi saya di WhatsApp !</p>
+        </div>
       </motion.h3>
       <motion.div
         initial={{ y: 10, opacity: 0 }}

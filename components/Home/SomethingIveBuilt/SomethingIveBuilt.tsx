@@ -656,7 +656,6 @@ export default function SomethingIveBuilt() {
               >
                 <span className="pr-4 z-10">Wordpress</span>
                 
-                
               </ul>
               <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
               <a href="https://zahratrans.my.id" target={"_blank"} rel="noreferrer">
@@ -665,9 +664,7 @@ export default function SomethingIveBuilt() {
               </div>
             </div>
           </div>
-
         </div>
-
     </div>
     </div>
   );

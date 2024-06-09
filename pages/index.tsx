@@ -1,7 +1,10 @@
+import { useContext, useEffect, useState, useRef } from "react";
+import Head from "next/head";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Header from "../components/Header/Header";
 import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
-import { useContext, useEffect, useState, useRef } from "react";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
 import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
@@ -10,33 +13,22 @@ import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIve
 import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
 import Footer from "../components/Footer/Footer";
 import AppContext from "../components/AppContextFolder/AppContext";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import Head from "next/head";
 import ScreenSizeDetector from "../components/CustomComponents/ScreenSizeDetector";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
+
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
   const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
   const [ShowMe, setShowMe] = useState(false);
-  // context Variable to clearInterval
   const context = useContext(AppContext);
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
-
-  // userData state that will be used to get usr location
   const [userData, setUserData] = useState(null);
-
-  // check if user from Black List
   const [isBlackListed, setIsBlackListed] = useState(false);
-
-  // check if NEXT_PUBLC_BLACKLIST_COUNTRIES is empty
   const [IsBlackListEmpty, setIsBlackListEmpty] = useState(
     process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES === "" ? true : false
   );
 
-  // this userEffect will be called to get the user location, so we can check if he is from the blackList,
-  // this will only run if NEXT_PUBLIC_BLACKLIST_COUNTRIES is not empty
   useEffect(() => {
     if (!IsBlackListEmpty) {
       const fetchData = async () => {
@@ -47,41 +39,31 @@ export default function Home() {
               .then(data => data.ip);
           };
 
-          const response = await fetch("/api/userInfoByIP/" + (await IP_Address())); // Replace with your actual API endpoint
+          const response = await fetch("/api/userInfoByIP/" + (await IP_Address()));
           const data = await response.json();
           setUserData(data);
         } catch (error) {
           console.error("Error fetching data location and ip address:", error);
-          // Handle errors as needed
         }
       };
 
       fetchData();
     }
-  }, [IsBlackListEmpty]); // Empty dependency array ensures that this effect runs once when the component mounts
+  }, [IsBlackListEmpty]);
 
-  // this useEffect will be called when userData is set
   useEffect(() => {
-    // this will only run if NEXT_PUBLIC_BLACKLIST_COUNTRIES is not empty
-    if (!IsBlackListEmpty) {
-      if (userData) {
-        // check if the user country is in the blackList
-        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES?.includes(userData.country)) {
-          // set isBlackListed to true
-          setIsBlackListed(true);
-        }
+    if (!IsBlackListEmpty && userData) {
+      if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES?.includes(userData.country)) {
+        setIsBlackListed(true);
       }
     }
   }, [IsBlackListEmpty, userData]);
 
   useEffect(() => {
-    // remove the interval Cookie timer setter when
     clearInterval(context.sharedState.userdata.timerCookieRef.current);
     if (typeof window !== "undefined") {
-      // remove UserDataPuller project EventListeners
       window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
       window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
-      // remove Typing project EventListeners
       window.removeEventListener("resize", context.sharedState.typing.eventInputLostFocus);
       document.removeEventListener("keydown", context.sharedState.typing.keyboardEvent);
     }
@@ -92,7 +74,7 @@ export default function Home() {
     setTimeout(() => {
       setShowThisCantBeReached(false);
     }, 5400);
-    // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
+
     setTimeout(() => {
       setShowElement(false);
       setShowMe(true);
@@ -103,6 +85,20 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 's') {
+        window.open('https://wa.link/njvrbh', '_blank');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   console.log("website is rendering...");
