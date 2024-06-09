@@ -44,7 +44,7 @@ export default function SomethingIveBuilt() {
                 ></div>
               </Link> */}
 
-              <a href="https://t.ly/figmamoody" target={"_blank"} rel="noreferrer">
+              <a href="https://www.figma.com/design/tFm5k3v7Guccr1xB2tkZX0/Moody?node-id=0-1&t=f7EhLt5gaCZRpGfD-1" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -73,7 +73,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-AAsecondary text-base">Figma Project</span>
-                <a href="https://t.ly/figmamoody" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.figma.com/design/tFm5k3v7Guccr1xB2tkZX0/Moody?node-id=0-1&t=f7EhLt5gaCZRpGfD-1" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Moody
                   </span>
@@ -95,7 +95,7 @@ export default function SomethingIveBuilt() {
                 
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
-                <a href="https://t.ly/figmamoody" target={"_blank"} rel="noreferrer">
+                <a href="https://www.figma.com/design/tFm5k3v7Guccr1xB2tkZX0/Moody?node-id=0-1&t=f7EhLt5gaCZRpGfD-1" target={"_blank"} rel="noreferrer">
                   <ExternalLink url={""} router={router} />
                 </a>
               </div>
@@ -111,7 +111,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href={"https://t.ly/sehatin"} target="_blank" rel="noreferrer">
+              <a href={"https://www.figma.com/design/ceRz1Vsrus25FHUAeTuAdH/GEMASTIK?m=auto&t=XGfOpfea93ZKGmgJ-6"} target="_blank" rel="noreferrer">
                 <div
                   className="absolute w-full h-full rounded bg-AAprimary 
            transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
@@ -138,7 +138,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1  z-10">
                 <span className="text-AAsecondary text-base">Figma Project</span>
-                <a href="https://t.ly/sehatin" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.figma.com/design/ceRz1Vsrus25FHUAeTuAdH/GEMASTIK?m=auto&t=XGfOpfea93ZKGmgJ-6" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Sehatin
                   </span>
@@ -162,7 +162,7 @@ export default function SomethingIveBuilt() {
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 
-                <a href="https://t.ly/sehatin" target={"_blank"} rel="noreferrer">
+                <a href="https://www.figma.com/design/ceRz1Vsrus25FHUAeTuAdH/GEMASTIK?m=auto&t=XGfOpfea93ZKGmgJ-6" target={"_blank"} rel="noreferrer">
                   <ExternalLink url={""} router={router} />
                 </a>
               </div>
@@ -178,7 +178,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <Link href={"/https://t.ly/figmastuncare"}>
+              <Link href={"https://www.figma.com/design/Z4N9baFIypcjaSINpwG6A6/PKM?m=auto&t=XGfOpfea93ZKGmgJ-6"}>
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAsecondary 
@@ -207,7 +207,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-AAsecondary text-base">Figma Project</span>
-                <Link href={"/https://t.ly/figmastuncare"}>
+                <Link href={"https://www.figma.com/design/Z4N9baFIypcjaSINpwG6A6/PKM?m=auto&t=XGfOpfea93ZKGmgJ-6"}>
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Stuncare
                   </span>
@@ -230,7 +230,7 @@ export default function SomethingIveBuilt() {
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 
-                <ExternalLink url={"/https://t.ly/figmastuncare"} router={router} />
+                <ExternalLink url={"https://www.figma.com/design/Z4N9baFIypcjaSINpwG6A6/PKM?m=auto&t=XGfOpfea93ZKGmgJ-6"} router={router} />
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <Link href={"/https://t.ly/figmadapurin"}>
+              <Link href={"https://www.figma.com/design/aDbelB2fq38n0KDVW5MyTS/mobile-app?t=7K0hFK4teRdy5Snr-0"}>
                 <div
                   className="absolute w-full h-full rounded bg-AAsecondary 
            transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
@@ -271,7 +271,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1  z-10">
                 <span className="text-AAsecondary text-base">Figma Project</span>
-                <Link href={"/https://t.ly/figmadapurin"}>
+                <Link href={"https://www.figma.com/design/aDbelB2fq38n0KDVW5MyTS/mobile-app?t=7K0hFK4teRdy5Snr-0"}>
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Dapurin
                   </span>
@@ -295,7 +295,7 @@ export default function SomethingIveBuilt() {
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 
-                <ExternalLink url={"/https://t.ly/figmadapurin"} router={router} />
+                <ExternalLink url={"https://www.figma.com/design/aDbelB2fq38n0KDVW5MyTS/mobile-app?t=7K0hFK4teRdy5Snr-0"} router={router} />
               </div>
             </div>
           </div>
@@ -309,7 +309,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <a href="https://t.ly/gitjadwalin" target={"_blank"} rel="noreferrer">
+              <a href="https://github.com/rakategar/Jadwalin-Task-App.git" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -344,7 +344,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-AAsecondary text-base">Mobile Dev Project</span>
-                <a href="https://t.ly/gitjadwalin" target={"_blank"} rel="noreferrer">
+                <a href="https://github.com/rakategar/Jadwalin-Task-App.git" target={"_blank"} rel="noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Jadwalin
                   </span>
@@ -449,7 +449,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+              <a href="https://github.com/rakategar/web-wibu.git" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -484,7 +484,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-AAsecondary text-base">Web Dev Project</span>
-                <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+                <a href="https://github.com/rakategar/web-wibu.git" target={"_blank"} rel="noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     WebWibu
                   </span>
@@ -510,7 +510,7 @@ export default function SomethingIveBuilt() {
               </ul>
               <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
                 <GithubIcon link="https://github.com/rakategar/jadwalin" />
-                <a href="https://t.ly/gitwebwibu" target={"_blank"} rel="noreferrer">
+                <a href="https://github.com/rakategar/web-wibu.git" target={"_blank"} rel="noreferrer">
                   
                 </a>
               </div>
