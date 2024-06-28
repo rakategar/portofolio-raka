@@ -15,6 +15,7 @@ import Footer from "../components/Footer/Footer";
 import AppContext from "../components/AppContextFolder/AppContext";
 import ScreenSizeDetector from "../components/CustomComponents/ScreenSizeDetector";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
@@ -129,7 +130,7 @@ export default function Home() {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
-
+      <SpeedInsights />
       {!isBlackListed ? (
         <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
           {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>}
