@@ -4,10 +4,14 @@ import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
     ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "TypeScript"],
-    ["MySQL", "Prisma", "Firebase", "Supabase", "Flutter"],
+    ["MySQL", "Prisma", "Firebase", "Supabase", "Flutter", "Go Lang"],
   ];
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div
+      id="aboutSection"
+      data-aos="fade-up"
+      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+    >
       {/* // ? 0.1 About Me */}
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -15,8 +19,15 @@ export default function AboutMe(props) {
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"} />
-            <span className="text-AAsecondary font-Header text-sm  sm:text-xl"> 01.</span>
+            <ArrowIcon
+              className={
+                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"
+              }
+            />
+            <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
+              {" "}
+              01.
+            </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               Tentang Aku
             </span>
@@ -29,25 +40,42 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-              Haloo aku Raka, Mahasiswa semester 4 Program Studi <span className="text-AAsecondary">S1 Pendidikan Teknologi
-               Informasi Universitas Negeri Surabaya</span>, 
-              memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam Organisasi ekstra maupun intra kampus, 
-              Tekun, Ulet, dan &nbsp; 
-              <span className="text-AAsecondary">dengan memiliki IPK 3.89 pada semester 4 &nbsp;
-              </span>menjadikanku Sangat Teliti dan Serius dalam mengerjakan segala sesuatu, baik pekerjaan kecil maupun besar,
-              mengutamakan kejujuran dan suka berinovasi, maka dari itu aku selalu tertantang mencoba hal baru.
+                Haloo aku Raka, Mahasiswa semester 4 Program Studi{" "}
+                <span className="text-AAsecondary">
+                  S1 Pendidikan Teknologi Informasi Universitas Negeri Surabaya
+                </span>
+                , memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam
+                Organisasi ekstra maupun intra kampus, Tekun, Ulet, dan &nbsp;
+                <span className="text-AAsecondary">
+                  dengan memiliki IPK 3.91 pada semester 6 &nbsp;
+                </span>
+                menjadikanku Sangat Teliti dan Serius dalam mengerjakan segala
+                sesuatu, baik pekerjaan kecil maupun besar, mengutamakan
+                kejujuran dan suka berinovasi, maka dari itu aku selalu
+                tertantang mencoba hal baru.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Aku sangat suka mencoba hal hal baru, walau basic ku adalah di bidang &nbsp; 
-                <span className="text-AAsecondary">UI/UX designer dan Front End Web Development,</span>&nbsp;tapi aku juga pernah belajar &nbsp; 
-                <span className="text-AAsecondary">mobile development dengan Flutter</span>
-                . selain itu aku juga aktif dalam berkegiatan sosial  dan organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
-                <span className="text-AAsecondary">Himpunan Mahasiswa Teknik Informatika sebagai Kepala Departemen 
-                PSDM</span>
-               , dan &nbsp;
-               <span className="text-AAsecondary">Forum Mahasiswa Tuban Ronggolawe sebagai Staff Kewirausahaan</span>
+                Aku sangat suka mencoba hal hal baru, walau basic ku adalah di
+                bidang &nbsp;
+                <span className="text-AAsecondary">
+                  UI/UX designer dan Front End Web Development,
+                </span>
+                &nbsp;tapi aku juga pernah belajar &nbsp;
+                <span className="text-AAsecondary">
+                  mobile development dengan Flutter
+                </span>
+                . selain itu aku juga aktif dalam berkegiatan sosial dan
+                organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
+                <span className="text-AAsecondary">
+                  Himpunan Mahasiswa Teknik Informatika sebagai Kepala
+                  Departemen PSDM
+                </span>
+                , dan &nbsp;
+                <span className="text-AAsecondary">
+                  Forum Mahasiswa Tuban Ronggolawe sebagai Staff Kewirausahaan
+                </span>
               </span>
             </div>
             {/* <div className="font-Header tracking-wide">
@@ -73,9 +101,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[0].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
@@ -85,9 +118,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[1].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
