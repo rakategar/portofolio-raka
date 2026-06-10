@@ -1,53 +1,43 @@
-import { useContext, useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Header from "../components/Header/Header";
-import Startup from "../components/Header/StartupLogo/Startup";
-import MyName from "../components/Home/MyName/MyName";
-import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
-import AboutMe from "../components/Home/AboutMe/AboutMe";
-import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
-import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
-import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
-import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
-import Footer from "../components/Footer/Footer";
-import AppContext from "../components/AppContextFolder/AppContext";
-import ScreenSizeDetector from "../components/CustomComponents/ScreenSizeDetector";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import BootLoader from "../components/V2/BootLoader";
+import Navbar from "../components/V2/Navbar";
+import Hero from "../components/V2/Hero";
+import About from "../components/V2/About";
+import Experience from "../components/V2/Experience";
+import Projects from "../components/V2/Projects";
+import Contact from "../components/V2/Contact";
+import FooterV2 from "../components/V2/FooterV2";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
+// Three.js needs the browser — render the scene client-side only.
+const NeuralScene = dynamic(() => import("../components/V2/NeuralScene"), {
+  ssr: false,
+});
 
 export default function Home() {
-  const [ShowElement, setShowElement] = useState(false);
-  const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
-  const [ShowMe, setShowMe] = useState(false);
-  const context = useContext(AppContext);
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const homeRef = useRef<HTMLDivElement>(null);
+  const [booted, setBooted] = useState(false);
   const [userData, setUserData] = useState(null);
   const [isBlackListed, setIsBlackListed] = useState(false);
-  const [IsBlackListEmpty, setIsBlackListEmpty] = useState(
-    process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES === "" ? true : false
-  );
+  const IsBlackListEmpty = !process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES;
 
   useEffect(() => {
     if (!IsBlackListEmpty) {
       const fetchData = async () => {
         try {
-          const IP_Address = async () => {
-            return fetch("https://api.ipify.org/?format=json")
-              .then(res => res.json())
-              .then(data => data.ip);
-          };
-
-          const response = await fetch("/api/userInfoByIP/" + (await IP_Address()));
-          const data = await response.json();
-          setUserData(data);
+          const ip = await fetch("https://api.ipify.org/?format=json")
+            .then((res) => res.json())
+            .then((data) => data.ip);
+          const response = await fetch("/api/userInfoByIP/" + ip);
+          setUserData(await response.json());
         } catch (error) {
           console.error("Error fetching data location and ip address:", error);
         }
       };
-
       fetchData();
     }
   }, [IsBlackListEmpty]);
@@ -61,55 +51,28 @@ export default function Home() {
   }, [IsBlackListEmpty, userData]);
 
   useEffect(() => {
-    clearInterval(context.sharedState.userdata.timerCookieRef.current);
-    if (typeof window !== "undefined") {
-      window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
-      window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
-      window.removeEventListener("resize", context.sharedState.typing.eventInputLostFocus);
-      document.removeEventListener("keydown", context.sharedState.typing.keyboardEvent);
-    }
-    setTimeout(() => {
-      setShowElement(true);
-    }, 4500);
-
-    setTimeout(() => {
-      setShowThisCantBeReached(false);
-    }, 5400);
-
-    setTimeout(() => {
-      setShowElement(false);
-      setShowMe(true);
-      context.sharedState.finishedLoading = true;
-      context.setSharedState(context.sharedState);
-    }, 10400);
-  }, [context, context.sharedState]);
-
-  useEffect(() => {
-    Aos.init({ duration: 2000, once: true });
+    Aos.init({ duration: 900, once: true, offset: 80 });
   }, []);
 
+  // shortcut: tekan "S" untuk WhatsApp
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === 's') {
-        window.open('https://wa.link/njvrbh', '_blank');
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement;
+      if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") return;
+      if (event.key === "s") {
+        window.open("https://wa.link/njvrbh", "_blank");
       }
     };
-
-    window.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  console.log("website is rendering...");
   const meta = {
-    title: "Raka Tegar - Web Dev",
-    description: `Haii aku Raka UI/UX and Front End Web Dev, Yuk Kenalan !`,
+    title: "Raka Tegar — Web Dev & AI Builder",
+    description: `Haii aku Raka, UI/UX & Front End Web Dev. Selamat datang di dunia digital-ku — futuristik, AI, dan 3D. Yuk kenalan!`,
     image: "/muka.png",
     type: "website",
   };
-  const isProd = process.env.NODE_ENV === "production";
 
   return (
     <>
@@ -120,37 +83,41 @@ export default function Home() {
         <meta property="og:url" content={`https://portoraka.site`} />
         <link rel="canonical" href={`https://portoraka.site`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Raka Tegar" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@titofabdo" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
+        <meta name="theme-color" content="#030014" />
       </Head>
       <SpeedInsights />
-      {!isBlackListed ? (
-        <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-          {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>}
-          {context.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>}
-          <Header finishedLoading={context.sharedState.finishedLoading} sectionsRef={homeRef} />
-          <MyName finishedLoading={context.sharedState.finishedLoading} />
-          <SocialMediaArround finishedLoading={context.sharedState.finishedLoading} />
-          {context.sharedState.finishedLoading ? <AboutMe ref={aboutRef} /> : <></>}
-          {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
-          {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
-          {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
-          {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={"https://github.com/rakategar"} hideSocialsInDesktop={true} />
-          ) : (
-            <></>
-          )}
-          {!isProd && <ScreenSizeDetector />}
-        </div>
-      ) : (
+      {isBlackListed ? (
         <Maintenance />
+      ) : (
+        <div className="relative min-h-screen bg-[#030014] text-gray-300 overflow-x-hidden">
+          {!booted && <BootLoader onDone={() => setBooted(true)} />}
+
+          <NeuralScene />
+
+          {/* ambient grid + vignette overlays */}
+          <div className="pointer-events-none fixed inset-0 z-[1] cyber-grid opacity-40" />
+          <div className="pointer-events-none fixed inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_40%,#030014_100%)]" />
+
+          <div className="relative z-10">
+            <Navbar />
+            <main>
+              <Hero />
+              <About />
+              <Experience />
+              <Projects />
+              <Contact />
+            </main>
+            <FooterV2 />
+          </div>
+        </div>
       )}
     </>
   );
