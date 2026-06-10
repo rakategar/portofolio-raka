@@ -4,23 +4,21 @@ import dynamic from "next/dynamic";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import BootLoader from "../components/V2/BootLoader";
-import Navbar from "../components/V2/Navbar";
-import Hero from "../components/V2/Hero";
-import About from "../components/V2/About";
-import Experience from "../components/V2/Experience";
-import Projects from "../components/V2/Projects";
-import Contact from "../components/V2/Contact";
-import FooterV2 from "../components/V2/FooterV2";
+import NavbarV3 from "../components/V3/NavbarV3";
+import HeroV3 from "../components/V3/HeroV3";
+import AboutV3 from "../components/V3/AboutV3";
+import Workflow from "../components/V3/Workflow";
+import ProjectsStory from "../components/V3/ProjectsStory";
+import ExperienceV3 from "../components/V3/ExperienceV3";
+import ContactV3 from "../components/V3/ContactV3";
+import FooterV3 from "../components/V3/FooterV3";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
 
-// Three.js needs the browser — render the scene client-side only.
-const NeuralScene = dynamic(() => import("../components/V2/NeuralScene"), {
-  ssr: false,
-});
+// Komponen canvas & avatar butuh browser API — render client-side saja.
+const NeuronCanvas = dynamic(() => import("../components/V3/NeuronCanvas"), { ssr: false });
+const ClaudeBuddy = dynamic(() => import("../components/V3/ClaudeBuddy"), { ssr: false });
 
 export default function Home() {
-  const [booted, setBooted] = useState(false);
   const [userData, setUserData] = useState(null);
   const [isBlackListed, setIsBlackListed] = useState(false);
   const IsBlackListEmpty = !process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES;
@@ -51,7 +49,7 @@ export default function Home() {
   }, [IsBlackListEmpty, userData]);
 
   useEffect(() => {
-    Aos.init({ duration: 900, once: true, offset: 80 });
+    Aos.init({ duration: 700, once: true, offset: 60, easing: "ease-out-cubic" });
   }, []);
 
   // shortcut: tekan "S" untuk WhatsApp
@@ -68,8 +66,8 @@ export default function Home() {
   }, []);
 
   const meta = {
-    title: "Raka Tegar — Web Dev & AI Builder",
-    description: `Haii aku Raka, UI/UX & Front End Web Dev. Selamat datang di dunia digital-ku — futuristik, AI, dan 3D. Yuk kenalan!`,
+    title: "Raka Tegar — Web Dev & Automation",
+    description: `Haii aku Raka, UI/UX & Front End Web Dev yang suka merangkai workflow AI. Yuk kenalan!`,
     image: "/muka.png",
     type: "website",
   };
@@ -91,32 +89,27 @@ export default function Home() {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        <meta name="theme-color" content="#030014" />
+        <meta name="theme-color" content="#020617" />
       </Head>
       <SpeedInsights />
       {isBlackListed ? (
         <Maintenance />
       ) : (
-        <div className="relative min-h-screen bg-[#030014] text-gray-300 overflow-x-hidden">
-          {!booted && <BootLoader onDone={() => setBooted(true)} />}
-
-          <NeuralScene />
-
-          {/* ambient grid + vignette overlays */}
-          <div className="pointer-events-none fixed inset-0 z-[1] cyber-grid opacity-40" />
-          <div className="pointer-events-none fixed inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_40%,#030014_100%)]" />
-
+        <div className="relative min-h-screen bg-slate-950 text-slate-300 overflow-x-hidden antialiased">
+          <NeuronCanvas />
           <div className="relative z-10">
-            <Navbar />
+            <NavbarV3 />
             <main>
-              <Hero />
-              <About />
-              <Experience />
-              <Projects />
-              <Contact />
+              <HeroV3 />
+              <AboutV3 />
+              <Workflow />
+              <ProjectsStory />
+              <ExperienceV3 />
+              <ContactV3 />
             </main>
-            <FooterV2 />
+            <FooterV3 />
           </div>
+          <ClaudeBuddy />
         </div>
       )}
     </>

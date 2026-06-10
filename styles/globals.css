@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,37 +16,19 @@
 @layer utilities {
   body::-webkit-scrollbar {
     width: 0.4em;
-    background-color: #030014;
+    background-color: #020617;
   }
 
   body::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #00f0ff, #9d4eff);
+    background-color: #334155;
     scrollbar-gutter: stable;
     border-radius: 40px;
   }
 
-  /* faint cyber grid backdrop */
-  .cyber-grid {
-    background-image: linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
-  }
-
-  /* CRT scanlines for holo images */
-  .scanline-overlay {
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 240, 255, 0.06) 0px,
-      rgba(0, 240, 255, 0.06) 1px,
-      transparent 1px,
-      transparent 4px
-    );
-  }
-
-  .clip-corner {
-    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+  /* fade kiri-kanan untuk marquee */
+  .marquee-mask {
+    mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
   }
 }
 
@@ -54,8 +36,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #030014;
-  font-family: "Rajdhani", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  background-color: #020617;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -69,46 +51,57 @@ a {
 }
 
 ::selection {
-  background: rgba(0, 240, 255, 0.35);
-  color: #ffffff;
+  background: rgba(217, 119, 87, 0.35);
+  color: #fff;
 }
 
-/* ---------- Glitch effect ---------- */
-.glitch {
-  position: relative;
+/* ---------- marquee stack ---------- */
+.marquee {
+  animation: marquee-scroll 30s linear infinite;
 }
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  clip-path: inset(0 0 0 0);
-  opacity: 0.8;
+.marquee:hover {
+  animation-play-state: paused;
 }
-.glitch::before {
-  color: #00f0ff;
-  z-index: -1;
-  animation: glitch-shift-1 3.2s infinite linear alternate-reverse;
-}
-.glitch::after {
-  color: #ff2ec4;
-  z-index: -2;
-  animation: glitch-shift-2 2.7s infinite linear alternate-reverse;
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-@keyframes glitch-shift-1 {
-  0%, 86%, 100% { transform: translate(0, 0); clip-path: inset(0 0 0 0); }
-  88% { transform: translate(-3px, 1px); clip-path: inset(10% 0 55% 0); }
-  92% { transform: translate(3px, -1px); clip-path: inset(60% 0 8% 0); }
-  96% { transform: translate(-2px, 0); clip-path: inset(30% 0 40% 0); }
+/* ---------- garis workflow animasi ---------- */
+.flow-line {
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #d97757 0 6px,
+    transparent 6px 12px
+  );
+  animation: dash-move 0.8s linear infinite;
+}
+@keyframes dash-move {
+  to { background-position: 12px 0; }
 }
 
-@keyframes glitch-shift-2 {
-  0%, 84%, 100% { transform: translate(0, 0); clip-path: inset(0 0 0 0); }
-  87% { transform: translate(3px, -1px); clip-path: inset(45% 0 25% 0); }
-  91% { transform: translate(-3px, 1px); clip-path: inset(5% 0 70% 0); }
-  95% { transform: translate(2px, 1px); clip-path: inset(70% 0 5% 0); }
+/* ---------- Klod, si avatar ---------- */
+.buddy-float {
+  animation: buddy-bob 3.2s ease-in-out infinite;
+}
+@keyframes buddy-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.buddy-spin {
+  animation: buddy-twirl 0.7s ease-in-out;
+}
+@keyframes buddy-twirl {
+  to { transform: rotate(360deg); }
+}
+
+.buddy-eye {
+  animation: buddy-blink 4.5s infinite;
+  transform-origin: center;
+}
+@keyframes buddy-blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
 }

@@ -19,17 +19,14 @@ module.exports = {
         Text2: ["Lato", "sans-serif"],
         About: ["Playfair Display", "serif"],
         Arimo: ["Arimo", "sans-serif"],
-        display: ["Orbitron", "sans-serif"],
-        mono: ["Share Tech Mono", "ui-monospace", "monospace"],
-        sans: ["Rajdhani", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
       },
       colors: {
-        neon: {
-          cyan: "#00f0ff",
-          purple: "#9d4eff",
-          magenta: "#ff2ec4",
-          bg: "#030014",
-          panel: "#06001f",
+        clay: {
+          DEFAULT: "#D97757",
+          light: "#E89B7B",
+          dark: "#B85C3D",
         },
         AAprimary: "#0b192f",
         AAsecondary: "#64ffda",
