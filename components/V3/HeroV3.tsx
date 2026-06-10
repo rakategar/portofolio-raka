@@ -77,13 +77,13 @@ export default function HeroV3() {
               href={SOCIALS.cv}
               target="_blank"
               rel="noreferrer"
-              className="px-6 py-3 rounded-full bg-clay text-slate-950 font-semibold hover:bg-clay-light transition-colors"
+              className="px-6 py-3 rounded-full bg-clay text-slate-950 font-semibold hover:bg-clay-light hover:scale-105 active:scale-95 transition-all"
             >
               Cek CV Ku
             </a>
             <button
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-              className="px-6 py-3 rounded-full border border-slate-700 text-slate-200 font-semibold hover:border-slate-500 hover:bg-slate-900 transition-colors"
+              className="px-6 py-3 rounded-full border border-slate-700 text-slate-200 font-semibold hover:border-slate-500 hover:bg-slate-900 hover:scale-105 active:scale-95 transition-all"
             >
               Lihat Cerita Projek ↓
             </button>

@@ -4,11 +4,29 @@ import { NAV_ITEMS, SOCIALS } from "./data";
 export default function NavbarV3() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // scrollspy: tandai menu sesuai section yang sedang terlihat
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        }
+      },
+      { rootMargin: "-35% 0px -55% 0px" }
+    );
+    NAV_ITEMS.forEach((item) => {
+      const el = document.getElementById(item.target);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
   }, []);
 
   const scrollTo = (id: string) => {
@@ -37,16 +55,23 @@ export default function NavbarV3() {
             <button
               key={item.target}
               onClick={() => scrollTo(item.target)}
-              className="text-sm text-slate-400 hover:text-slate-100 transition-colors"
+              className={`relative text-sm transition-colors ${
+                active === item.target
+                  ? "text-clay font-semibold"
+                  : "text-slate-400 hover:text-slate-100"
+              }`}
             >
               {item.label}
+              {active === item.target && (
+                <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-clay" />
+              )}
             </button>
           ))}
           <a
             href={SOCIALS.cv}
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-semibold px-4 py-2 rounded-full bg-clay text-slate-950 hover:bg-clay-light transition-colors"
+            className="text-sm font-semibold px-4 py-2 rounded-full bg-clay text-slate-950 hover:bg-clay-light hover:scale-105 active:scale-95 transition-all"
           >
             Lihat CV
           </a>

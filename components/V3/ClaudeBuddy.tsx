@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { SOCIALS } from "./data";
 
 const SECTION_LINES: Record<string, string> = {
-  hero: "Halo! Aku Klod, asisten kecil di portfolio ini. Coba klik di mana saja — jaring neuronnya ikut bergerak 😉",
+  hero: "Tadaa, websitenya jadi! 🎉 Aku Klod, asisten kecil di sini. Coba klik di mana saja — jaring neuronnya ikut bergerak 😉",
   about: "Raka itu detail banget — IPK 3.91 lho. Dan ya, bahan bakarnya indomie goreng.",
   workflow: "Ini bagian favoritku: dari ide, dibangun bareng Claude Code, dirangkai dengan n8n, lalu ship! 🚀",
   projects: "Scroll pelan-pelan ya, tiap projek punya ceritanya sendiri. Chapter 02 itu AI yang bales komentar Instagram!",

@@ -16,7 +16,7 @@ export default function ContactV3() {
       <div className="mt-9 flex flex-wrap justify-center gap-3">
         <a
           href={`mailto:${SOCIALS.email}`}
-          className="px-7 py-3.5 rounded-full bg-clay text-slate-950 font-semibold hover:bg-clay-light transition-colors"
+          className="px-7 py-3.5 rounded-full bg-clay text-slate-950 font-semibold hover:bg-clay-light hover:scale-105 active:scale-95 transition-all"
         >
           Hai Raka ! 👋
         </a>
@@ -24,7 +24,7 @@ export default function ContactV3() {
           href={SOCIALS.whatsapp}
           target="_blank"
           rel="noreferrer"
-          className="px-7 py-3.5 rounded-full border border-slate-700 text-slate-200 font-semibold hover:border-slate-500 hover:bg-slate-900 transition-colors"
+          className="px-7 py-3.5 rounded-full border border-slate-700 text-slate-200 font-semibold hover:border-slate-500 hover:bg-slate-900 hover:scale-105 active:scale-95 transition-all"
         >
           WhatsApp
         </a>

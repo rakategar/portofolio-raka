@@ -14,11 +14,14 @@ import ContactV3 from "../components/V3/ContactV3";
 import FooterV3 from "../components/V3/FooterV3";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
 
-// Komponen canvas & avatar butuh browser API — render client-side saja.
+// Komponen canvas, avatar & intro butuh browser API — render client-side saja.
 const NeuronCanvas = dynamic(() => import("../components/V3/NeuronCanvas"), { ssr: false });
 const ClaudeBuddy = dynamic(() => import("../components/V3/ClaudeBuddy"), { ssr: false });
+const IntroSequence = dynamic(() => import("../components/V3/IntroSequence"), { ssr: false });
+const ScrollProgress = dynamic(() => import("../components/V3/ScrollProgress"), { ssr: false });
 
 export default function Home() {
+  const [introDone, setIntroDone] = useState(false);
   const [userData, setUserData] = useState(null);
   const [isBlackListed, setIsBlackListed] = useState(false);
   const IsBlackListEmpty = !process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES;
@@ -96,8 +99,10 @@ export default function Home() {
         <Maintenance />
       ) : (
         <div className="relative min-h-screen bg-slate-950 text-slate-300 overflow-x-hidden antialiased">
+          {!introDone && <IntroSequence onDone={() => setIntroDone(true)} />}
           <NeuronCanvas />
-          <div className="relative z-10">
+          <div className={`relative z-10 ${introDone ? "page-reveal" : ""}`}>
+            <ScrollProgress />
             <NavbarV3 />
             <main>
               <HeroV3 />
@@ -109,7 +114,7 @@ export default function Home() {
             </main>
             <FooterV3 />
           </div>
-          <ClaudeBuddy />
+          {introDone && <ClaudeBuddy />}
         </div>
       )}
     </>
