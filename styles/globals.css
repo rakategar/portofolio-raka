@@ -196,6 +196,65 @@ a {
   }
 }
 
+/* ---------- desk scene (POV meja kerja) ---------- */
+.desk-room {
+  background:
+    radial-gradient(ellipse 70% 50% at 75% 25%, rgba(217, 119, 87, 0.12), transparent),
+    radial-gradient(ellipse 60% 45% at 20% 30%, rgba(99, 102, 241, 0.1), transparent),
+    linear-gradient(180deg, #1c1714 0%, #241c17 55%, #15100d 100%);
+}
+
+.desk-wood {
+  background:
+    repeating-linear-gradient(
+      92deg,
+      rgba(0, 0, 0, 0.08) 0 3px,
+      transparent 3px 38px
+    ),
+    linear-gradient(180deg, #7a5a40 0%, #5f4430 45%, #46311f 100%);
+}
+
+.desk-zoom-laptop {
+  transition: transform 0.68s cubic-bezier(0.5, 0, 0.8, 0.4), opacity 0.68s ease;
+  transform: scale(3) !important;
+  transform-origin: 50% 66%;
+  opacity: 0;
+}
+
+.desk-zoom-phone {
+  transition: transform 0.68s cubic-bezier(0.5, 0, 0.8, 0.4), opacity 0.68s ease;
+  transform: scale(3.4) !important;
+  transform-origin: 70% 64%;
+  opacity: 0;
+}
+
+.steam span {
+  animation: steam-rise 2.4s ease-in-out infinite;
+}
+@keyframes steam-rise {
+  0% { transform: translateY(4px) scaleY(0.7); opacity: 0; }
+  40% { opacity: 1; }
+  100% { transform: translateY(-10px) scaleY(1.15); opacity: 0; }
+}
+
+.neon-flicker {
+  animation: neon-flicker 4.2s linear infinite;
+}
+@keyframes neon-flicker {
+  0%, 6%, 10%, 100% { opacity: 1; }
+  7%, 9% { opacity: 0.4; }
+  54% { opacity: 1; }
+  55% { opacity: 0.6; }
+  56% { opacity: 1; }
+}
+
+.toast-pop {
+  animation: toast-pop 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+@keyframes toast-pop {
+  from { transform: translateY(10px); opacity: 0; }
+}
+
 /* penutup anti-flash: tampil hanya saat intro belum diputar,
    dilepas oleh IntroSequence saat selesai/di-skip */
 .intro-cover {

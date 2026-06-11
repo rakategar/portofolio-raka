@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import DeskScene from "./DeskScene";
 import {
   MessagesTile,
   CameraTile,
@@ -568,6 +569,8 @@ export default function IntroSequence(props: { onDone: () => void }) {
     if (reduced || sessionStorage.getItem("introPlayed")) return "skip";
     return window.innerWidth < 768 ? "mobile" : "desktop";
   });
+  // stage "desk" = POV meja kerja; "device" = intro MacBook / app Claude
+  const [stage, setStage] = useState<"desk" | "device">("desk");
   const doneRef = useRef(props.onDone);
   doneRef.current = props.onDone;
 
@@ -578,6 +581,13 @@ export default function IntroSequence(props: { onDone: () => void }) {
     document.documentElement.classList.remove("intro-pending");
     doneRef.current();
   }, []);
+
+  const finishToProjects = useCallback(() => {
+    finish();
+    setTimeout(() => {
+      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+    }, 350);
+  }, [finish]);
 
   // skip instan bila sudah pernah diputar
   useEffect(() => {
@@ -601,10 +611,27 @@ export default function IntroSequence(props: { onDone: () => void }) {
 
   return (
     <>
-      {mode === "desktop" ? <DesktopIntro onFinish={finish} /> : <MobileIntro onFinish={finish} />}
+      {stage === "desk" ? (
+        <div className="fixed inset-0 z-[100]">
+          <DeskScene
+            device={mode}
+            onLaptop={() => setStage("device")}
+            onPhone={() => setStage("device")}
+            onFinishToProjects={finishToProjects}
+          />
+        </div>
+      ) : mode === "desktop" ? (
+        <DesktopIntro onFinish={finish} />
+      ) : (
+        <MobileIntro onFinish={finish} />
+      )}
       <button
         onClick={finish}
-        className="fixed bottom-40 right-4 md:bottom-auto md:top-11 z-[110] px-4 py-1.5 rounded-full bg-black/40 backdrop-blur text-white/80 text-xs font-medium hover:bg-black/60 transition-colors"
+        className={`fixed z-[110] px-4 py-1.5 rounded-full bg-black/40 backdrop-blur text-white/80 text-xs font-medium hover:bg-black/60 transition-colors ${
+          stage === "desk"
+            ? "top-4 right-4"
+            : "bottom-40 right-4 md:bottom-auto md:top-11"
+        }`}
       >
         Lewati intro →
       </button>
