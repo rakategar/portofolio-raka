@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import SectionLabel from "./SectionLabel";
 import { FEATURED, ARCHIVE, FeaturedProject, Project } from "./data";
@@ -37,13 +37,72 @@ function LinkIcons(props: { project: Project; className?: string }) {
   );
 }
 
+// Rail navigasi chapter di tepi kanan — muncul hanya saat menjelajah projek.
+function ChapterRail() {
+  const [visible, setVisible] = useState(false);
+  const [active, setActive] = useState("01");
+
+  useEffect(() => {
+    const section = document.getElementById("projects");
+    if (!section) return;
+    const sectionObs = new IntersectionObserver(([e]) => setVisible(e.isIntersecting), {
+      threshold: 0.05,
+    });
+    sectionObs.observe(section);
+
+    const chapterObs = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) setActive((e.target as HTMLElement).dataset.chapter || "01");
+        }
+      },
+      { rootMargin: "-40% 0px -50% 0px" }
+    );
+    document.querySelectorAll<HTMLElement>("[data-chapter]").forEach((el) => chapterObs.observe(el));
+    return () => {
+      sectionObs.disconnect();
+      chapterObs.disconnect();
+    };
+  }, []);
+
+  return (
+    <div
+      className={`hidden xl:flex fixed right-6 top-1/2 -translate-y-1/2 z-30 flex-col items-center gap-2 transition-all duration-500 ${
+        visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4 pointer-events-none"
+      }`}
+    >
+      {FEATURED.map((p) => (
+        <button
+          key={p.chapter}
+          onClick={() =>
+            document
+              .querySelector(`[data-chapter="${p.chapter}"]`)
+              ?.scrollIntoView({ behavior: "smooth", block: "center" })
+          }
+          title={p.title}
+          className={`w-8 h-8 rounded-full border text-[10px] font-mono transition-all ${
+            active === p.chapter
+              ? "border-clay bg-clay text-slate-950 font-bold scale-110"
+              : "border-slate-700 text-slate-500 hover:border-slate-500 hover:text-slate-300"
+          }`}
+        >
+          {p.chapter}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function Chapter(props: { project: FeaturedProject; flip: boolean }) {
   const p = props.project;
   const imgRef = useParallax<HTMLDivElement>(0.08);
   const ghostRef = useParallax<HTMLDivElement>(-0.05);
 
   return (
-    <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-16">
+    <div
+      data-chapter={p.chapter}
+      className="relative grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-16"
+    >
       {/* nomor chapter raksasa di belakang */}
       <div
         ref={ghostRef}
@@ -133,6 +192,7 @@ export default function ProjectsStory() {
         desc="Setiap projek berangkat dari masalah nyata. Scroll pelan-pelan — ini cerita singkatnya."
       />
 
+      <ChapterRail />
       <div className="divide-y divide-slate-800/60">
         {FEATURED.map((p, i) => (
           <Chapter key={p.id} project={p} flip={i % 2 === 1} />

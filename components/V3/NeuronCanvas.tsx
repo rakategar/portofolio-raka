@@ -57,23 +57,39 @@ export default function NeuronCanvas() {
       mouse.x = -9999;
       mouse.y = -9999;
     };
-    const onClick = (e: MouseEvent) => {
-      attractor.x = e.clientX;
-      attractor.y = e.clientY;
-      attractor.until = performance.now() + 2200;
-      pulses.push({ x: e.clientX, y: e.clientY, r: 4, alpha: 0.5 });
-      // lahirkan beberapa neuron baru di titik klik (jaga jumlah total)
-      for (let i = 0; i < 4; i++) {
-        if (nodes.length >= MAX_NODES + 24) nodes.shift();
+    const spawnAt = (x: number, y: number, count: number) => {
+      pulses.push({ x, y, r: 4, alpha: 0.5 });
+      for (let i = 0; i < count; i++) {
+        if (nodes.length >= MAX_NODES + 36) nodes.shift();
         nodes.push({
-          x: e.clientX + rand(-12, 12),
-          y: e.clientY + rand(-12, 12),
+          x: x + rand(-12, 12),
+          y: y + rand(-12, 12),
           vx: rand(-0.5, 0.5),
           vy: rand(-0.5, 0.5),
           r: rand(1.4, 2.4),
         });
       }
     };
+
+    let clickCount = 0;
+    const onClick = (e: MouseEvent) => {
+      attractor.x = e.clientX;
+      attractor.y = e.clientY;
+      attractor.until = performance.now() + 2200;
+      spawnAt(e.clientX, e.clientY, 4);
+      clickCount++;
+      window.dispatchEvent(new CustomEvent("neuron:grow", { detail: clickCount }));
+    };
+
+    // easter egg dari command palette: kembang api neuron
+    const onBurst = () => {
+      for (let k = 0; k < 7; k++) {
+        setTimeout(() => {
+          spawnAt(rand(width * 0.1, width * 0.9), rand(height * 0.15, height * 0.85), 5);
+        }, k * 130);
+      }
+    };
+    window.addEventListener("neuron:burst", onBurst);
 
     window.addEventListener("mousemove", onMove, { passive: true });
     window.addEventListener("mouseout", onLeave);
@@ -184,6 +200,7 @@ export default function NeuronCanvas() {
       window.removeEventListener("mouseout", onLeave);
       window.removeEventListener("click", onClick);
       window.removeEventListener("resize", resize);
+      window.removeEventListener("neuron:burst", onBurst);
     };
   }, []);
 

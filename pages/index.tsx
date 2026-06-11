@@ -19,6 +19,8 @@ const NeuronCanvas = dynamic(() => import("../components/V3/NeuronCanvas"), { ss
 const ClaudeBuddy = dynamic(() => import("../components/V3/ClaudeBuddy"), { ssr: false });
 const IntroSequence = dynamic(() => import("../components/V3/IntroSequence"), { ssr: false });
 const ScrollProgress = dynamic(() => import("../components/V3/ScrollProgress"), { ssr: false });
+const CursorGlow = dynamic(() => import("../components/V3/CursorGlow"), { ssr: false });
+const CommandPalette = dynamic(() => import("../components/V3/CommandPalette"), { ssr: false });
 
 export default function Home() {
   const [introDone, setIntroDone] = useState(false);
@@ -93,14 +95,23 @@ export default function Home() {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
         <meta name="theme-color" content="#020617" />
+        {/* cegah konten ter-flash sebelum intro: tandai html secepat mungkin */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(!sessionStorage.getItem("introPlayed")&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("intro-pending");}}catch(e){}`,
+          }}
+        />
       </Head>
       <SpeedInsights />
       {isBlackListed ? (
         <Maintenance />
       ) : (
         <div className="relative min-h-screen bg-slate-950 text-slate-300 overflow-x-hidden antialiased">
+          <div className="intro-cover" aria-hidden="true" />
           {!introDone && <IntroSequence onDone={() => setIntroDone(true)} />}
           <NeuronCanvas />
+          <CursorGlow />
+          <CommandPalette />
           <div className={`relative z-10 ${introDone ? "page-reveal" : ""}`}>
             <ScrollProgress />
             <NavbarV3 />

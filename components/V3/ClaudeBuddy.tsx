@@ -17,6 +17,7 @@ const QUIPS = [
   "Klik di area kosong — neuronnya ngumpul ke titik klikmu!",
   "Fun fact: Raka suka indomie goreng. Sama, aku juga... andai bisa makan.",
   "Coba hover ke kartu projek, ada detail kecil di mana-mana.",
+  "Tekan ⌘K (atau Ctrl+K) — ada command palette rahasia! 🤫",
 ];
 
 export default function ClaudeBuddy() {
@@ -52,6 +53,33 @@ export default function ClaudeBuddy() {
       if (el) observer.observe(el);
     });
     return () => observer.disconnect();
+  }, []);
+
+  // reaksi terhadap easter egg: palette "Sapa Klod" & pertumbuhan neuron
+  useEffect(() => {
+    const onQuip = () => {
+      setOpen(true);
+      setMessage(QUIPS[quipIdx.current % QUIPS.length]);
+      quipIdx.current++;
+      setSpin(true);
+      setTimeout(() => setSpin(false), 700);
+    };
+    const onGrow = (e: Event) => {
+      const count = (e as CustomEvent<number>).detail;
+      if (count === 10) {
+        setOpen(true);
+        setMessage("Wih, kamu sudah menumbuhkan 10 neuron baru! Jaringnya makin pintar 🧠");
+      } else if (count === 30) {
+        setOpen(true);
+        setMessage("30 klik?! Oke, kamu resmi jadi co-founder jaring neuron ini 😄 Coba ⌘K → 'Ledakan neuron'.");
+      }
+    };
+    window.addEventListener("klod:quip", onQuip);
+    window.addEventListener("neuron:grow", onGrow);
+    return () => {
+      window.removeEventListener("klod:quip", onQuip);
+      window.removeEventListener("neuron:grow", onGrow);
+    };
   }, []);
 
   // efek mengetik

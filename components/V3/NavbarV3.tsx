@@ -67,6 +67,14 @@ export default function NavbarV3() {
               )}
             </button>
           ))}
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent("palette:open"))}
+            title="Command palette"
+            className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500 border border-slate-800 rounded-md px-2 py-1 hover:border-slate-600 hover:text-slate-300 transition-colors"
+          >
+            <kbd>⌘</kbd>
+            <kbd>K</kbd>
+          </button>
           <a
             href={SOCIALS.cv}
             target="_blank"

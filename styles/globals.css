@@ -196,6 +196,30 @@ a {
   }
 }
 
+/* penutup anti-flash: tampil hanya saat intro belum diputar,
+   dilepas oleh IntroSequence saat selesai/di-skip */
+.intro-cover {
+  display: none;
+}
+html.intro-pending .intro-cover {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  background: #000;
+}
+
+/* command palette */
+.palette-pop {
+  animation: palette-pop 0.18s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+}
+@keyframes palette-pop {
+  from {
+    transform: scale(0.96) translateY(-8px);
+    opacity: 0;
+  }
+}
+
 /* reveal halaman setelah intro */
 .page-reveal {
   animation: page-reveal 0.8s ease-out;
