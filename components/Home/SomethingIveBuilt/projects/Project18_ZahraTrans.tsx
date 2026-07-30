@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project08_ZahraTrans() {
+export default function Project18_ZahraTrans() {
   return (
     <ProjectImageRight
       category="Web Dev Project"

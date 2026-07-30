@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project13_Dapurin() {
+export default function Project23_Dapurin() {
   return (
     <ProjectImageLeft
       category="UI/UX Design Project"

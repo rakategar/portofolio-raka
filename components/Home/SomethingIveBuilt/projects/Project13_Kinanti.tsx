@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project07_Kinanti() {
+export default function Project13_Kinanti() {
   return (
     <ProjectImageLeft
       category="WhatsApp Bot Project"

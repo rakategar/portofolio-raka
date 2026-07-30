@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project16_Moody() {
+export default function Project26_Moody() {
   return (
     <ProjectImageRight
       category="UI/UX Design Project"

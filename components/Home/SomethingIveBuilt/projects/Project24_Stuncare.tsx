@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project14_Stuncare() {
+export default function Project24_Stuncare() {
   return (
     <ProjectImageRight
       category="UI/UX Design Project"

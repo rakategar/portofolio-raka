@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project07_CekKodam() {
+export default function Project17_CekKodam() {
   return (
     <ProjectImageLeft
       category="Web Dev Project"

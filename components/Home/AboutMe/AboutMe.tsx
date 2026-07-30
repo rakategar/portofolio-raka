@@ -68,8 +68,15 @@ export default function AboutMe(props) {
                 <span className="text-AAsecondary">otomasi AI</span>. Workflow
                 favoritku, ngobrol sama &nbsp;
                 <span className="text-AAsecondary">Claude Code</span>, lalu
-                biarkan pipeline nya bekerja. selain itu aku juga aktif dalam
-                berkegiatan sosial dan
+                biarkan pipeline nya bekerja. Saat ini aku juga aktif sebagai
+                &nbsp;
+                <span className="text-AAsecondary">
+                  Developer di VIBOXS
+                </span>
+                , studio digital yang membangun website premium, sistem
+                otomasi, dan dashboard internal untuk startup maupun
+                perusahaan. selain itu aku juga aktif dalam berkegiatan sosial
+                dan
                 organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
                 <span className="text-AAsecondary">
                   Himpunan Mahasiswa Teknik Informatika sebagai Kepala

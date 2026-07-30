@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Img from "../../../smallComp/image/Img";
 import ExternalLink from "../../../Icons/ExternalLink";
 
-export default function Project09_WebUMKMMu() {
+export default function Project19_WebUMKMMu() {
   const router = useRouter();
   return (
     <div

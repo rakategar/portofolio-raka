@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project03_ThreadAffiliate() {
+export default function Project09_ThreadAffiliate() {
   return (
     <ProjectImageLeft
       category="AI Automation Project"

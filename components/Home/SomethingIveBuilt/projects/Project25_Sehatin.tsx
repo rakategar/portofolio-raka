@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project15_Sehatin() {
+export default function Project25_Sehatin() {
   return (
     <ProjectImageLeft
       category="UI/UX Design Project"

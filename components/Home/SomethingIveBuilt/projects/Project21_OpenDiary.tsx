@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project11_OpenDiary() {
+export default function Project21_OpenDiary() {
   return (
     <ProjectImageLeft
       category="Web Dev Project"
