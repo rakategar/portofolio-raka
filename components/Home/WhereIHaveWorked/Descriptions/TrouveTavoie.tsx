@@ -9,7 +9,7 @@ export default function TrouveTavoie() {
       keywords: ["Ketua Umum"],
     },
     {
-      text: "2024 - Sekarang | Himpunan Mahasiswa Teknik Informatika | Kepala Departemen PSDM. |\nMemimpin Departemen PSDM agar dapat meraih tujuan mahasiswa dalam hal pengembangan diri, akademik maupun non-akademik.",
+      text: "2024 - 2025 | Himpunan Mahasiswa Teknik Informatika | Kepala Departemen PSDM. |\nMemimpin Departemen PSDM agar dapat meraih tujuan mahasiswa dalam hal pengembangan diri, akademik maupun non-akademik.",
       keywords: ["Kepala Departemen PSDM"],
     },
     {

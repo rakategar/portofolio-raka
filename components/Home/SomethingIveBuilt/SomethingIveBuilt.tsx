@@ -40,7 +40,7 @@ export default function SomethingIveBuilt() {
           className="flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-AAsecondary"
         />
         <div className="flex-none flex-row space-x-2 items-center pr-2">
-          <span className="text-AAsecondary font-sans text-sm sm:text-xl"> 04.</span>
+          <span className="text-AAsecondary font-sans text-sm sm:text-xl"> 03.</span>
           <span className="font-bold tracking-wider text-gray-200 text-lg md:text-2xl w-44 md:w-56 opacity-85">
             {" "}Project Ku
           </span>

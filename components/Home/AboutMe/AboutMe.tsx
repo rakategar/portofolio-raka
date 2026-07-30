@@ -4,7 +4,7 @@ import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
     ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Flutter", "Go Lang"],
-    ["Supabase", "Prisma", "MySQL", "Firebase", "n8n", "Claude Code", "Figma"],
+    ["Supabase", "Prisma", "MySQL", "Firebase", "n8n", "Figma"],
   ];
   return (
     <div
@@ -65,26 +65,23 @@ export default function AboutMe(props) {
                   mobile development dengan Flutter
                 </span>
                 , dan belakangan ketagihan membangun &nbsp;
-                <span className="text-AAsecondary">otomasi AI</span>. Workflow
-                favoritku, ngobrol sama &nbsp;
-                <span className="text-AAsecondary">Claude Code</span>, lalu
-                biarkan pipeline nya bekerja. Saat ini aku juga aktif sebagai
-                &nbsp;
                 <span className="text-AAsecondary">
-                  Developer di VIBOXS
+                  otomasi dan integrasi AI
+                </span>
+                . Saat ini aku aktif sebagai &nbsp;
+                <span className="text-AAsecondary">
+                  Automation & AI Integration Specialist di VIBOXS
                 </span>
                 , studio digital yang membangun website premium, sistem
                 otomasi, dan dashboard internal untuk startup maupun
                 perusahaan. selain itu aku juga aktif dalam berkegiatan sosial
-                dan
-                organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
+                dan organisasi, saat ini aku menjabat sebagai &nbsp;
                 <span className="text-AAsecondary">
-                  Himpunan Mahasiswa Teknik Informatika sebagai Kepala
-                  Departemen PSDM
+                  Ketua Umum Forum Mahasiswa Tuban Ronggolawe
                 </span>
-                , dan &nbsp;
+                , dan sebelumnya sebagai &nbsp;
                 <span className="text-AAsecondary">
-                  Forum Mahasiswa Tuban Ronggolawe sebagai Ketua Umum
+                  Kepala Departemen PSDM Himpunan Mahasiswa Teknik Informatika
                 </span>
               </span>
             </div>
