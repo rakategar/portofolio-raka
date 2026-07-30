@@ -13,7 +13,7 @@ export default function Project09_WebUMKMMu() {
       {/* Left image */}
       <div className="hidden bg-AAprimary z-10 py-4 absolute md:grid grid-cols-12 w-full h-full content-center">
         <div className="relative rounded w-full h-full col-span-7">
-          <a href="https://kinaishku.com/makanan-2" target="_blank" rel="noreferrer">
+          <a href="https://kinasihku.com/makanan-2" target="_blank" rel="noreferrer">
             <div className="absolute w-full h-full rounded bg-AAprimary transition-opacity opacity-60 hover:opacity-0 hover:cursor-pointer duration-300"></div>
           </a>
           <Img src="/Webumkmmu.png" alt="Project Screenshot" className="w-full rounded h-full" />
@@ -32,7 +32,7 @@ export default function Project09_WebUMKMMu() {
         <div className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-3">
           <div className="flex flex-col space-y-1 md:items-end z-10">
             <span className="text-AAsecondary text-base">Web Dev Project</span>
-            <a href="https://kinaishku.com/makanan-2" target="_blank" rel="noreferrer">
+            <a href="https://kinasihku.com/makanan-2" target="_blank" rel="noreferrer">
               <span className="md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                 Web UMKM Mu
               </span>

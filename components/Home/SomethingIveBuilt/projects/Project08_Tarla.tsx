@@ -4,7 +4,7 @@ import ProjectImageRight from "../ProjectImageRight";
 export default function Project04_Tarla() {
   return (
     <ProjectImageRight
-      category="Figma Project"
+      category="UI/UX Design Project"
       title="Tarla"
       href="https://www.figma.com/design/tFm5k3v7Guccr1xB2tkZX0/Moody?node-id=0-1&p=f&t=OpbMXnee1TlNqyPO-0"
       description=", merupakan aplikasi mobile dengan chat AI yang bertujuan untuk membantu pengguna dalam memonitoring konsumsi gula dalam makanan yang mereka konsumsi sehari hari"

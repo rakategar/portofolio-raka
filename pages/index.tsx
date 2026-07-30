@@ -7,6 +7,7 @@ import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
+import Workflow from "../components/Home/Workflow/Workflow";
 import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
 import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
@@ -104,8 +105,8 @@ export default function Home() {
 
   console.log("website is rendering...");
   const meta = {
-    title: "Raka Tegar - Web Dev",
-    description: `Haii aku Raka UI/UX and Front End Web Dev, Yuk Kenalan !`,
+    title: "Raka Tegar - Web Dev & Automation",
+    description: `Haii aku Raka, UI/UX & Front End Web Dev yang suka merangkai workflow AI. Yuk kenalan !`,
     image: "/muka.png",
     type: "website",
   };
@@ -120,7 +121,7 @@ export default function Home() {
         <meta property="og:url" content={`https://portoraka.site`} />
         <link rel="canonical" href={`https://portoraka.site`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Raka Tegar" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
@@ -139,6 +140,7 @@ export default function Home() {
           <MyName finishedLoading={context.sharedState.finishedLoading} />
           <SocialMediaArround finishedLoading={context.sharedState.finishedLoading} />
           {context.sharedState.finishedLoading ? <AboutMe ref={aboutRef} /> : <></>}
+          {context.sharedState.finishedLoading ? <Workflow /> : <></>}
           {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
           {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}

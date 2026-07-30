@@ -4,7 +4,7 @@ import ProjectImageRight from "../ProjectImageRight";
 export default function Project02_WiseAi() {
   return (
     <ProjectImageRight
-      category="Web Dev Project"
+      category="AI & Web Dev Project"
       title="Wise.ai"
       href="https://github.com/rakategar/wise-ai/"
       description=", merupakan sebuah AI Chat Bot Asistant untuk membantu manajemen efisiensi penggunaan energi pada peralatan rumah tangga."

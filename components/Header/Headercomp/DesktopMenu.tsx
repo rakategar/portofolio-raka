@@ -43,8 +43,29 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
        
       >
-        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+        <ReactScrollLink to="WorkflowSection" spy={true} smooth={true} offset={-100} duration={200}>
           &gt; 02.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Workflow</span>
+        </ReactScrollLink>
+      </motion.div>
+      <motion.div
+        initial={{
+          y: -40,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          type: "spring",
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 9.75,
+        }}
+        className="text-AAsecondary"
+      >
+        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+          &gt; 03.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Pengalaman</span>
         </ReactScrollLink>
       </motion.div>
@@ -65,7 +86,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
       >
         <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-        &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Projek</span>
+        &gt; 04. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Projek</span>
 
         </ReactScrollLink>
         
@@ -87,7 +108,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
       >
          <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-         &gt; 04. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Kontak</span>
+         &gt; 05. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Kontak</span>
         </ReactScrollLink>
       </motion.span>
       <a href={"/cvraka.pdf"} target={"_blank"} rel="noreferrer">

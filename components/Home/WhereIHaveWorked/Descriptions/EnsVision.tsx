@@ -5,8 +5,8 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function EnsVision() {
   const tasks = [
     {
-      text: "2022 - Sekarang | Universitas Negeri Surabaya | S1 Pendidikan Teknologi Informasi",
-      keywords: ["S1 Pendidikan Teknologi Informasi"],
+      text: "2022 - Sekarang | Universitas Negeri Surabaya | S1 Pendidikan Teknologi Informasi\nIPK 3.91 - aktif dalam organisasi intra maupun ekstra kampus.",
+      keywords: ["S1 Pendidikan Teknologi Informasi", "IPK 3.91"],
     },
     {
       text: "2019 - 2022 | SMA Negeri 1 Tuban | Matematika & Ilmu Pengetahuan Alam\nMemberikan pemahaman peran Sains  dan Teknologi dalam Masyarakat",

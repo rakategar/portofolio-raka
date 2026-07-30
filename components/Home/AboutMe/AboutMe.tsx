@@ -3,8 +3,8 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "TypeScript"],
-    ["MySQL", "Prisma", "Firebase", "Supabase", "Flutter", "Go Lang"],
+    ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Flutter", "Go Lang"],
+    ["Supabase", "Prisma", "MySQL", "Firebase", "n8n", "Claude Code", "Figma"],
   ];
   return (
     <div
@@ -40,15 +40,13 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Haloo aku Raka, Mahasiswa semester 4 Program Studi{" "}
+                Haloo aku Raka, Mahasiswa Program Studi{" "}
                 <span className="text-AAsecondary">
                   S1 Pendidikan Teknologi Informasi Universitas Negeri Surabaya
                 </span>
                 , memiliki banyak Pengalaman Kepemimpinan serta Aktif dalam
                 Organisasi ekstra maupun intra kampus, Tekun, Ulet, dan &nbsp;
-                <span className="text-AAsecondary">
-                  dengan memiliki IPK 3.91 pada semester 6 &nbsp;
-                </span>
+                <span className="text-AAsecondary">dengan IPK 3.91 &nbsp;</span>
                 menjadikanku Sangat Teliti dan Serius dalam mengerjakan segala
                 sesuatu, baik pekerjaan kecil maupun besar, mengutamakan
                 kejujuran dan suka berinovasi, maka dari itu aku selalu
@@ -66,7 +64,12 @@ export default function AboutMe(props) {
                 <span className="text-AAsecondary">
                   mobile development dengan Flutter
                 </span>
-                . selain itu aku juga aktif dalam berkegiatan sosial dan
+                , dan belakangan ketagihan membangun &nbsp;
+                <span className="text-AAsecondary">otomasi AI</span>. Workflow
+                favoritku, ngobrol sama &nbsp;
+                <span className="text-AAsecondary">Claude Code</span>, lalu
+                biarkan pipeline nya bekerja. selain itu aku juga aktif dalam
+                berkegiatan sosial dan
                 organisasi, organisasi yang aku ikuti saat ini yaitu, &nbsp;
                 <span className="text-AAsecondary">
                   Himpunan Mahasiswa Teknik Informatika sebagai Kepala
@@ -74,7 +77,7 @@ export default function AboutMe(props) {
                 </span>
                 , dan &nbsp;
                 <span className="text-AAsecondary">
-                  Forum Mahasiswa Tuban Ronggolawe sebagai Staff Kewirausahaan
+                  Forum Mahasiswa Tuban Ronggolawe sebagai Ketua Umum
                 </span>
               </span>
             </div>

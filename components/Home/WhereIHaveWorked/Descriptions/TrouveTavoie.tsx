@@ -9,7 +9,7 @@ export default function TrouveTavoie() {
       keywords: ["Ketua Umum"],
     },
     {
-      text: "2024 - Sekarang | Himpunan Mahasiswa Teknik Informatika | Kepala Departemen PSDM. |\nMemimpin Departemen PSDM agar dapat meraih tujuan mahasiswa dalam hal pengembangan diri, baik di bidang akademik maupun non-akademik.",
+      text: "2024 - Sekarang | Himpunan Mahasiswa Teknik Informatika | Kepala Departemen PSDM. |\nMemimpin Departemen PSDM agar dapat meraih tujuan mahasiswa dalam hal pengembangan diri, akademik maupun non-akademik.",
       keywords: ["Kepala Departemen PSDM"],
     },
     {
@@ -17,7 +17,7 @@ export default function TrouveTavoie() {
       keywords: ["Staff PSDM."],
     },
     {
-      text: "2023 - 2024 | Forum Mahasiswa Tuban Ronggolawe | Staff Kewirausahaan. |\nBertanggung jawab membantu staf terhadap segala upaya Pengadaan Keuangan melalui Kewirausahaan maupun lainnya",
+      text: "2023 - 2024 | Forum Mahasiswa Tuban Ronggolawe | Staff Kewirausahaan. |\nMembantu segala upaya Pengadaan Keuangan melalui Kewirausahaan maupun lainnya",
       keywords: ["Staff Kewirausahaan"],
     },
   ];
