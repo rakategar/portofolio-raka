@@ -58,7 +58,7 @@ export default function AboutMe(props) {
                 Aku sangat suka mencoba hal hal baru, walau basic ku adalah di
                 bidang &nbsp;
                 <span className="text-AAsecondary">
-                  UI/UX designer dan Front End Web Development,
+                  Fullstack Web Developer,
                 </span>
                 &nbsp;tapi aku juga pernah belajar &nbsp;
                 <span className="text-AAsecondary">

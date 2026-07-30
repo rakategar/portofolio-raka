@@ -105,7 +105,7 @@ export default function Home() {
   console.log("website is rendering...");
   const meta = {
     title: "Raka Tegar - Web Dev & Automation",
-    description: `Haii aku Raka, UI/UX & Front End Web Dev yang suka merangkai workflow AI. Yuk kenalan !`,
+    description: `Haii aku Raka, Fullstack Web Dev yang suka merangkai workflow AI. Yuk kenalan !`,
     image: "/muka.png",
     type: "website",
   };
