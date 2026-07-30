@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project14_Tarla() {
+export default function Project17_Tarla() {
   return (
     <ProjectImageRight
       category="UI/UX Design Project"

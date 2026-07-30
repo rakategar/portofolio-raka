@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project08_AutoDM() {
+export default function Project11_AutoDM() {
   return (
     <ProjectImageRight
       category="AI Automation Project"

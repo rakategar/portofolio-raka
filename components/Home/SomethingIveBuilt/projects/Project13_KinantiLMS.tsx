@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project10_KinantiLMS() {
+export default function Project13_KinantiLMS() {
   return (
     <ProjectImageRight
       category="Web Dev Project"

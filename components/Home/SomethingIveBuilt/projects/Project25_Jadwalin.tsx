@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project22_Jadwalin() {
+export default function Project25_Jadwalin() {
   return (
     <ProjectImageRight
       category="Mobile Dev Project"

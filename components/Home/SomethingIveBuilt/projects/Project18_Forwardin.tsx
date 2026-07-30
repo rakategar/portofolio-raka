@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project15_Forwardin() {
+export default function Project18_Forwardin() {
   return (
     <ProjectImageLeft
       category="Web Dev Project"

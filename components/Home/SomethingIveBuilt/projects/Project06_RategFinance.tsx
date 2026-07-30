@@ -1,9 +1,9 @@
 import React from "react";
-import ProjectImageRight from "../ProjectImageRight";
+import ProjectImageLeft from "../ProjectImageLeft";
 
 export default function Project06_RategFinance() {
   return (
-    <ProjectImageRight
+    <ProjectImageLeft
       category="Internal Finance Dashboard Project"
       title="Dashboard Keuangan RATEG"
       description=", merupakan dashboard keuangan internal RATEG Engineering untuk memantau arus kas perusahaan secara real time. Merangkum kas masuk dan keluar, saldo, pengeluaran per proyek, prediksi ketahanan sisa kas, hingga modul Kontrak, Jurnal, Piutang, dan Aset Kantor"

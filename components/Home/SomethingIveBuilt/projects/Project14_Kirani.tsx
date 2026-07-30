@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageLeft from "../ProjectImageLeft";
 
-export default function Project11_Kirani() {
+export default function Project14_Kirani() {
   return (
     <ProjectImageLeft
       category="Web Dev & IoT Project"

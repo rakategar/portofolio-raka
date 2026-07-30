@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project16_LoveMeter() {
+export default function Project19_LoveMeter() {
   return (
     <ProjectImageRight
       category="Web Dev Project"

@@ -7,25 +7,28 @@ import Project04_ACTBankBTN from "./projects/Project04_ACTBankBTN";
 import Project05_IcuClass from "./projects/Project05_IcuClass";
 import Project06_RategFinance from "./projects/Project06_RategFinance";
 import Project07_FaisalMaulana from "./projects/Project07_FaisalMaulana";
-import Project08_AutoDM from "./projects/Project08_AutoDM";
-import Project09_ThreadAffiliate from "./projects/Project09_ThreadAffiliate";
-import Project10_KinantiLMS from "./projects/Project10_KinantiLMS";
-import Project11_Kirani from "./projects/Project11_Kirani";
-import Project12_WiseAi from "./projects/Project12_WiseAi";
-import Project13_Kinanti from "./projects/Project13_Kinanti";
-import Project14_Tarla from "./projects/Project14_Tarla";
-import Project15_Forwardin from "./projects/Project15_Forwardin";
-import Project16_LoveMeter from "./projects/Project16_LoveMeter";
-import Project17_CekKodam from "./projects/Project17_CekKodam";
-import Project18_ZahraTrans from "./projects/Project18_ZahraTrans";
-import Project19_WebUMKMMu from "./projects/Project19_WebUMKMMu";
-import Project20_WebWibu from "./projects/Project20_WebWibu";
-import Project21_OpenDiary from "./projects/Project21_OpenDiary";
-import Project22_Jadwalin from "./projects/Project22_Jadwalin";
-import Project23_Dapurin from "./projects/Project23_Dapurin";
-import Project24_Stuncare from "./projects/Project24_Stuncare";
-import Project25_Sehatin from "./projects/Project25_Sehatin";
-import Project26_Moody from "./projects/Project26_Moody";
+import Project08_SpeakingPro from "./projects/Project08_SpeakingPro";
+import Project09_SpeakingProApp from "./projects/Project09_SpeakingProApp";
+import Project10_Gayatama from "./projects/Project10_Gayatama";
+import Project11_AutoDM from "./projects/Project11_AutoDM";
+import Project12_ThreadAffiliate from "./projects/Project12_ThreadAffiliate";
+import Project13_KinantiLMS from "./projects/Project13_KinantiLMS";
+import Project14_Kirani from "./projects/Project14_Kirani";
+import Project15_WiseAi from "./projects/Project15_WiseAi";
+import Project16_Kinanti from "./projects/Project16_Kinanti";
+import Project17_Tarla from "./projects/Project17_Tarla";
+import Project18_Forwardin from "./projects/Project18_Forwardin";
+import Project19_LoveMeter from "./projects/Project19_LoveMeter";
+import Project20_CekKodam from "./projects/Project20_CekKodam";
+import Project21_ZahraTrans from "./projects/Project21_ZahraTrans";
+import Project22_WebUMKMMu from "./projects/Project22_WebUMKMMu";
+import Project23_WebWibu from "./projects/Project23_WebWibu";
+import Project24_OpenDiary from "./projects/Project24_OpenDiary";
+import Project25_Jadwalin from "./projects/Project25_Jadwalin";
+import Project26_Dapurin from "./projects/Project26_Dapurin";
+import Project27_Stuncare from "./projects/Project27_Stuncare";
+import Project28_Sehatin from "./projects/Project28_Sehatin";
+import Project29_Moody from "./projects/Project29_Moody";
 
 export default function SomethingIveBuilt() {
   return (
@@ -56,25 +59,28 @@ export default function SomethingIveBuilt() {
         <Project05_IcuClass />
         <Project06_RategFinance />
         <Project07_FaisalMaulana />
-        <Project08_AutoDM />
-        <Project09_ThreadAffiliate />
-        <Project10_KinantiLMS />
-        <Project11_Kirani />
-        <Project12_WiseAi />
-        <Project13_Kinanti />
-        <Project14_Tarla />
-        <Project15_Forwardin />
-        <Project16_LoveMeter />
-        <Project17_CekKodam />
-        <Project18_ZahraTrans />
-        <Project19_WebUMKMMu />
-        <Project20_WebWibu />
-        <Project21_OpenDiary />
-        <Project22_Jadwalin />
-        <Project23_Dapurin />
-        <Project24_Stuncare />
-        <Project25_Sehatin />
-        <Project26_Moody />
+        <Project08_SpeakingPro />
+        <Project09_SpeakingProApp />
+        <Project10_Gayatama />
+        <Project11_AutoDM />
+        <Project12_ThreadAffiliate />
+        <Project13_KinantiLMS />
+        <Project14_Kirani />
+        <Project15_WiseAi />
+        <Project16_Kinanti />
+        <Project17_Tarla />
+        <Project18_Forwardin />
+        <Project19_LoveMeter />
+        <Project20_CekKodam />
+        <Project21_ZahraTrans />
+        <Project22_WebUMKMMu />
+        <Project23_WebWibu />
+        <Project24_OpenDiary />
+        <Project25_Jadwalin />
+        <Project26_Dapurin />
+        <Project27_Stuncare />
+        <Project28_Sehatin />
+        <Project29_Moody />
       </div>
     </div>
   );

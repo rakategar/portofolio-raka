@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImageRight from "../ProjectImageRight";
 
-export default function Project12_WiseAi() {
+export default function Project15_WiseAi() {
   return (
     <ProjectImageRight
       category="AI & Web Dev Project"
